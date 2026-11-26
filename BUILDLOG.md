@@ -56,9 +56,7 @@ root. The GitHub repository `RanggaMurphy/world-news-20261126` was
 confirmed to exist. The desk ran `git init -b main`, then ran the
 make.fun init in the session before writing any file:
 
-```
-makefun anchor 7b0ac6be247f72cd2c1ebc2f53abd4626c704a89 round 34283984
-```
+The init printed the anchor line for drand-quicknet round 34283984, naming root 7b0ac6be247f72cd2c1ebc2f53abd4626c704a89.
 
 The init created the beacon root commit and the LICENSE with its
 SPDX line. The beacon root commit is `7b0ac6b`. The freshness file

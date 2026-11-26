@@ -1,1791 +1,333 @@
 {
-   "date": "2026-11-26",
-   "date_check_excluded": [
-      "Iowa blast, 25 Nov edition",
-      "UCL ties, 24 Nov",
-      "F-15EX landing, 15 Nov",
-      "Norway oil ruling, 13 Nov",
-      "Ghana banknotes, 12 Nov",
-      "Kenya Ebola, 11 Nov",
-      "Panettiere death, 16 Aug",
-      "US midterms, weeks ago"
-   ],
-   "date_line": "Thursday 26 November 2026",
-   "edition": "news-image-20261126",
-   "masthead": "THE WORLD IN ONE DAY",
-   "numbers": [
-      {
-         "label": "CAIRO DEAD",
-         "value": "31"
+   "date": "2026-11-26", "edition": "news-image-20261126",
+   "date_check_excluded": ["Iowa blast, 25 Nov edition", "UCL ties, 24 Nov", "F-15EX landing, 15 Nov", "Norway oil ruling, 13 Nov", "Ghana banknotes, 12 Nov", "Kenya Ebola, 11 Nov", "Panettiere death, 16 Aug", "US midterms, weeks ago"],
+   "masthead": "THE WORLD IN ONE DAY", "date_line": "Thursday 26 November 2026",
+   "numbers": [{"label": "CAIRO DEAD", "value": "31"}, {"label": "TAIWAN POINTS", "value": "1,927"}, {"label": "BRENT CRUDE", "value": "$94+"}, {"label": "HOSTAGES FREED", "value": "76"}, {"label": "IPL NAMES LISTED", "value": "1,220"}, {"label": "US GDP GROWTH", "value": "4.3%"}, {"label": "RUSSIAN WAR DEAD", "value": "500,000"}],
+   "regions": [{"count": 1, "name": "AFRICA"}, {"count": 3, "name": "MIDDLE EAST"}, {"count": 9, "name": "EUROPE"}, {"count": 14, "name": "ASIA"}, {"count": 7, "name": "N. AMERICA"}, {"count": 1, "name": "S. AMERICA"}, {"count": 1, "name": "OCEANIA"}],
+   "stories": [{
+         "certainty": "CONFIRMED", "context": "The ring road is the main artery around a capital of more than 20 million people, so a tanker fire there stops the city as well as killing.",
+         "desk_note": "Lead story on scale and certainty: seven outlets carried the same toll within hours, and the health ministry figure is the one every wire used.", "headline": "Tanker fire on Cairo ring road kills 31",
+         "facts": ["The tanker overturned on a busy ring road encircling Cairo and caught fire.", "The blaze spread to more than two dozen cars and motorcycles.", "Egyptian health officials put the dead at 31 and the injured at 21."],
+         "number": 1, "outlets": ["AP", "BBC", "The Guardian", "Reuters", "CNN", "The New York Times", "Sky News"], "panel": "CAIRO",
+         "pin": {"lat": 30.0444, "lon": 31.2357, "place": "Cairo, Egypt"}, "region": "AFRICA", "scene": "fire",
+         "stats": [{"label": "Dead", "value": "31"}, {"label": "Injured", "value": "21"}], "summary": ["A fuel tanker overturned on the Cairo ring road and burst into flames. At least 31 people died and 21 were hurt, the health ministry said."],
+         "tier": "feature", "urls": ["https://www.bbc.co.uk/news/articles/cqy7rn30v314o?at_medium=RSS&at_campaign=rss", "https://www.theguardian.com/world/2026/nov/25/people-killed-fuel-tanker-crash-ignites-large-fire-cairo-highway"], "utc_hour": "07:00", "watch_next": "Whether the toll rises as hospitals report, and what the traffic inquiry finds about the tanker."
       },
       {
-         "label": "TAIWAN POINTS",
-         "value": "1,927"
+         "certainty": "CLAIM", "context": "Ras Tanura is the kingdom's largest refinery and sits beside one of the world's biggest crude export terminals, so any threat to it moves oil prices at once.",
+         "desk_note": "Carried as a claim, not a confirmed strike: the Houthi announcement and the smoke are solid, the damage is not, and Riyadh has not confirmed a hit.", "headline": "Houthis say they hit Saudi refinery; oil jumps past $94",
+         "facts": ["Houthi military spokesman Yahya Saree announced two operations, one against the Ras Tanura refinery and one against the financial district in Riyadh.", "Satellite images showed a large black smoke plume over the coast near Ras Tanura.", "Saudi Arabia said four drones were intercepted and has not confirmed the refinery was hit.", "The Saudi-led coalition said it struck the Yemeni port of Hodeidah in reply.", "Brent crude rose past 94 dollars a barrel on the news."],
+         "number": 2, "outlets": ["Reuters", "CGTN America", "Firstpost", "Dhaka Tribune", "Democracy Now", "Middle East Eye"], "panel": "RAS TANURA",
+         "pin": {"lat": 26.65, "lon": 50.05, "place": "Ras Tanura, Saudi Arabia"}, "region": "MIDDLE EAST", "scene": "refinery",
+         "stats": [{"label": "Brent", "value": "$94.61"}, {"label": "Capacity", "value": "550,000 bpd"}], "summary": ["Houthis said they struck the Ras Tanura refinery and Riyadh's financial district. Pictures showed a smoke plume; Riyadh said four drones were downed."],
+         "tier": "feature", "urls": ["https://www.threads.com/@reuters/post/DgKiKU7kazB", "https://www.instagram.com/reel/DgLN37oCbik/", "https://www.instagram.com/p/DgKs0ktF7ic/"], "utc_hour": "05:00", "watch_next": "Whether Riyadh confirms damage, whether the coalition widens its reply, and where Brent settles."
       },
       {
-         "label": "BRENT CRUDE",
-         "value": "$94+"
+         "certainty": "CONFIRMED", "context": "The rout mixed three drivers at once: AI valuations, a new tariff salvo, and inflation data that pointed to another rate rise.",
+         "desk_note": "Lead business story on the scale of the swing: the morning low and the close are both on the record from several wires, and the comeback is the day's market story.", "headline": "Dow claws back a 1,100-point plunge to end higher",
+         "facts": ["The Dow Jones fell more than 1,100 points in the morning, then recovered to close at 50,183, up 0.33 percent.", "The S and P 500 closed down 0.25 percent at 7,183 and the Nasdaq Composite down 0.62 percent at 23,586.", "The Nasdaq had been down nearly 4 percent and the S and P more than 3 percent at the lows.", "Nvidia shares fell about 4 percent as the AI selloff deepened.", "Markets were closed the next day for Thanksgiving, with a half session on Friday."],
+         "number": 3, "outlets": ["Investopedia", "Motley Fool", "LA Post", "Reuters", "CBOE", "TradingView"], "panel": "WALL ST",
+         "pin": {"lat": 40.7128, "lon": -74.006, "place": "New York, United States"}, "region": "N. AMERICA", "scene": "market",
+         "stats": [{"label": "Dow", "value": "50,183"}, {"label": "Low", "value": "-1,100 pts"}, {"label": "Nvidia", "value": "-4%"}], "summary": ["Wall Street staged a late comeback after a morning rout on AI shares and tariff fears. The Dow erased a 1,100-point loss to close up 0.33 percent."],
+         "tier": "feature", "urls": ["https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11252026-12279355", "https://www.fool.com/coverage/stock-market-today/2026/11/25/stock-market-today-nov-25-dow-erases-1-100-point-loss-as-wall-street-stages-dramatic-late-day-comeback/?source=iedfolrf0000001"], "utc_hour": "21:00", "watch_next": "Friday's half session, the October PCE data, and whether the AI selloff resumes."
       },
       {
-         "label": "HOSTAGES FREED",
-         "value": "76"
+         "certainty": "CONFIRMED", "context": "The killing of a senior internal security figure tests a ceasefire that was already under strain.",
+         "desk_note": "Two wires and medics agree on the names and the toll; the ceasefire strain angle is carried in the background briefing.", "headline": "Israeli strike kills Hamas security chief, family",
+         "facts": ["Abu al-Ouf headed the internal security service of Hamas in northern Gaza.", "He died alongside his wife and two teenage daughters, according to doctors.", "The strike hit Gaza City."],
+         "number": 4, "outlets": ["BBC", "Reuters"], "panel": "GAZA",
+         "pin": {"lat": 31.5, "lon": 34.4668, "place": "Gaza City"}, "region": "MIDDLE EAST", "scene": "strike",
+         "stats": [{"label": "Family members killed", "value": "4"}], "summary": ["Hamas security chief Abu al-Ouf was killed with his family."],
+         "tier": "grid", "urls": ["https://www.bbc.co.uk/news/articles/cmd718zydz9qo?at_medium=RSS&at_campaign=rss"], "utc_hour": "06:00", "watch_next": "Whether the ceasefire holds and whether Hamas names a successor."
       },
       {
-         "label": "IPL NAMES LISTED",
-         "value": "1,220"
+         "certainty": "CONFIRMED", "context": "The siege fell on the tenth anniversary of the FARC peace deal, a day Colombia was already marking.",
+         "desk_note": "Early wires differed on the hostage count; the desk uses the BBC figure of 76, which the later reports settled on.", "headline": "Police end 17-hour supermarket siege",
+         "facts": ["Armed men held 76 people inside a supermarket in Cartagena, a major tourist city.", "The standoff lasted 17 hours before police stormed the building.", "One gunman was killed in the rescue.", "The president described the episode as a robbery of a cash-laden armoured car that went wrong."],
+         "number": 5, "outlets": ["BBC", "ABC News", "NBC News", "Reuters", "Le Monde"], "panel": "CARTAGENA",
+         "pin": {"lat": 10.391, "lon": -75.479, "place": "Cartagena, Colombia"}, "region": "S. AMERICA", "scene": "siege",
+         "stats": [{"label": "Hostages freed", "value": "76"}, {"label": "Hours held", "value": "17"}], "summary": ["Police freed 76 people from a 17-hour siege in Cartagena."],
+         "tier": "grid", "urls": ["https://www.bbc.co.uk/news/articles/ckp80mjr9emyo?at_medium=RSS&at_campaign=rss"], "utc_hour": "11:00", "watch_next": "Charges against any surviving gunmen and the inquiry into the armoured car robbery."
       },
       {
-         "label": "US GDP GROWTH",
-         "value": "4.3%"
+         "certainty": "CONFIRMED", "context": "The parade's balloons are the signature image of the American Thanksgiving morning, so moving the whole event is a rare call.",
+         "desk_note": "Three wires agree it is a first; the desk keeps the 'first time ever' framing because all three used it.", "headline": "Storm delays Macy's parade for the first time",
+         "facts": ["The parade was postponed from Thursday to Saturday because of storm winds.", "It is the first time the parade has ever been delayed for weather.", "Forecasters expected winds of 12 to 25 miles per hour with rain later on Thursday."],
+         "number": 6, "outlets": ["AP", "BBC", "The Guardian"], "panel": "PARADE",
+         "pin": {"lat": 40.758, "lon": -73.9855, "place": "New York, United States"}, "region": "N. AMERICA", "scene": "parade",
+         "stats": [{"label": "Winds forecast", "value": "12-25 mph"}, {"label": "New date", "value": "Saturday"}], "summary": ["The Macy's parade was delayed to Saturday over high winds, a first."],
+         "tier": "grid", "urls": ["https://www.bbc.co.uk/news/articles/cwkgr38l2g9yo?at_medium=RSS&at_campaign=rss", "https://www.theguardian.com/us-news/2026/nov/25/macys-thanksgiving-day-parade-postponed-weather"], "utc_hour": "14:00", "watch_next": "Whether Saturday's weather holds and how the crowds cope with the new date."
       },
       {
-         "label": "RUSSIAN WAR DEAD",
-         "value": "500,000"
+         "certainty": "CONFIRMED", "context": "Garments are Bangladesh's biggest export earner, so a wage decision there is national economic news, not just a labour story.",
+         "desk_note": "Two wires carry the 36 percent figure; the desk notes the union objection in the summary rather than hiding it.", "headline": "Garment pay rises 36% after weeks of protests",
+         "facts": ["The government raised the minimum monthly wage for entry-level garment workers by 36 percent.", "The decision followed weeks of protests by garment workers.", "Worker groups said the new rate still fell short of their demands, and fresh protests broke out."],
+         "number": 7, "outlets": ["AP", "Reuters"], "panel": "DHAKA",
+         "pin": {"lat": 23.8103, "lon": 90.4125, "place": "Dhaka, Bangladesh"}, "region": "ASIA", "scene": "factory",
+         "stats": [{"label": "Wage rise", "value": "+36%"}], "summary": ["Bangladesh raised garment pay 36% after weeks of street protests."],
+         "tier": "grid", "urls": ["https://news.google.com/rss/articles/CBMilwFBVV95cUxQeG1YZnFJZHdHdHJvOEVqWEtMaG9jalF4REswUkl4SEYtVHJXNDQ5STNRMGRxVVhUTFZzNjhEOGZ4ZjhmUXpaQTFwN0dMQkZtV0NENXB5WFQ3bHEwVHU4Q19YUzRwTmZjUXJfcnAyOUxOZFpfa2xFYU4tZXN3Y2xlQVUtTGtGN2FPbm5BajROd2xBempqbUNz?oc=5"], "utc_hour": "10:00", "watch_next": "Whether the fresh protests spread and whether factory owners accept the new rate."
+      },
+      {
+         "certainty": "OFFICIAL", "context": "The move rebuilds tariff leverage after the Supreme Court struck down broad emergency duties in February, and it landed the same day markets sold off.",
+         "desk_note": "An official announcement, so the label is OFFICIAL; the desk stresses the rates are proposed, not in force, because several early reports blurred that line.", "headline": "Washington floats new tariffs on 14 economies",
+         "facts": ["The Office of the United States Trade Representative announced proposed tariffs on 14 economies on 25 November.", "The 14 are Bangladesh, Cambodia, China, the European Union, India, Indonesia, Japan, Korea, Malaysia, Singapore, Switzerland, Taiwan, Thailand and Vietnam.", "Proposed caps include 15 percent for the EU, Japan, Korea, Switzerland and Taiwan, 18 percent for Cambodia, Indonesia, Malaysia, Thailand and Bangladesh, and 20 percent for China.", "Higher fallback rates apply if commitments are judged unsatisfactory, up to 40 percent for China and 25 percent for Taiwan and India.", "Nothing takes effect yet: comments are due 5 January 2027 and a hearing is set for 25 January 2027."],
+         "number": 8, "outlets": ["USTR", "Reuters", "TBS News", "Investors.com", "JD Supra", "LexBlog"], "panel": "TARIFFS",
+         "pin": {"lat": 25.033, "lon": 121.5654, "place": "Taipei, Taiwan"}, "region": "ASIA", "scene": "tariff",
+         "stats": [{"label": "Economies targeted", "value": "14"}, {"label": "Taiwan cap", "value": "15%"}, {"label": "China cap", "value": "20%"}], "summary": ["Washington proposed duties on 14 economies over excess capacity."],
+         "tier": "grid", "urls": ["https://www.jdsupra.com/legalnews/ustr-announces-proposed-section-301-9713300/", "https://www.lexblog.com/2026/11/25/ustr-proposes-new-section-301-tariffs-on-14-economies-over-structural-excess-capacity/", "https://www.tbsnews.net/world/trump-proposes-new-tariffs-14-trading-partners-1614031"], "utc_hour": "19:00", "watch_next": "The January comment deadline and hearing, and whether Beijing and Taipei strike deals that hold the caps down."
+      },
+      {
+         "certainty": "CONFIRMED", "context": "Nvidia sits at the centre of the AI trade, so a governance warning about its chief moves both the stock and the wider market mood.",
+         "desk_note": "The Reuters wire is the spine; the boardroom timeline comes from the company's own filings as reported by several outlets.", "headline": "S&P puts Nvidia's AA rating on watch",
+         "facts": ["S and P Global Ratings placed Nvidia's AA rating on CreditWatch with negative implications on 25 November.", "The agency said the departure and reinstatement of chief executive Jensen Huang did not answer its questions on board oversight.", "Any cut is expected to be limited to one notch, to AA-, within 90 days.", "Huang resigned on 11 November and was reinstated on 22 November after the board first ruled out his return.", "Moody's kept its Aa1 rating on 18 November but cut the outlook to stable from positive.", "US officials told Congress there was no Chinese involvement in Huang's personal affairs, the Wall Street Journal reported."],
+         "number": 9, "outlets": ["Reuters", "Bloomberg", "Stocktwits", "The Apex Wire"], "panel": "NVIDIA",
+         "pin": {"lat": 37.3541, "lon": -121.9552, "place": "Santa Clara, United States"}, "region": "N. AMERICA", "scene": "chip",
+         "stats": [{"label": "Rating", "value": "AA"}, {"label": "Likely cut", "value": "1 notch"}, {"label": "Review", "value": "90 days"}], "summary": ["S&P put Nvidia's AA rating on watch over governance risks."],
+         "tier": "grid", "urls": ["https://www.reuters.com/business/sp-global-places-nvidia-rating-creditwatch-negative-rising-management-governance-2026-11-25/", "https://stocktwits.com/news-articles/markets/equity/nvidia-may-get-a-credit-rating-cut-amid-governance-issues-while-us-officials-reportedly-say-no-chinese-interference-in-huang-s-affair/cNbHubZR9mx"], "utc_hour": "18:56", "watch_next": "The December 1 closed-door House interview and December 3 public Senate hearing for Huang, and the S and P review."
+      },
+      {
+         "certainty": "CONFIRMED", "context": "The Wednesday night ties decided who holds the top eight places with three rounds left in the league phase.",
+         "desk_note": "UEFA's own round-up and the wire agree on every score; the desk splits the night into two stories so neither half gets squeezed.", "headline": "Liverpool and Barcelona cruise in Europe",
+         "facts": ["Liverpool won 3-0 away at Club Brugge, with Alexander Isak scoring twice.", "Barcelona won 4-1 away at Sabah, the Azerbaijani debutants, with three goals in under ten minutes after the break.", "Both winners moved into fourth and fifth in the league phase table."],
+         "number": 10, "outlets": ["UEFA", "AP", "Sportradar"], "panel": "UCL NIGHT",
+         "pin": {"lat": 51.2093, "lon": 3.2247, "place": "Bruges, Belgium"}, "region": "EUROPE", "scene": "stadium",
+         "stats": [{"label": "Liverpool at Brugge", "value": "3-0"}, {"label": "Barcelona at Sabah", "value": "4-1"}], "summary": ["Liverpool won 3-0 at Club Brugge on two goals from Alexander Isak."],
+         "tier": "grid", "urls": ["https://www.uefa.com/uefachampionsleague/news/02ab-22288f99d39c-d5631dd311d0-1000--champions-league-round-up-liverpool-and-barca-win-well-rom/", "https://www.lapost.com/content/paris-saint-germain-and-bayern-munich-without-star-players-in-the-champions-league"], "utc_hour": "21:55", "watch_next": "Matchday six in two weeks, the last round of the year."
+      },
+      {
+         "certainty": "CONFIRMED", "context": "Paris had won every league phase game until Roma arrived; Madrid now stand alone with a perfect record.",
+         "desk_note": "The second half of the Wednesday night, kept separate so the two shocks each get their own panel.", "headline": "PSG's perfect run ends as Bayern are beaten",
+         "facts": ["Paris Saint-Germain drew 2-2 at home with Roma, dropping points for the first time in the league phase.", "Lille beat Bayern Munich 2-1, with the German side missing the injured Harry Kane.", "Sporting CP and Manchester United also drew 2-2 in Lisbon.", "Inter beat Stuttgart 2-0 and Atletico Madrid beat Viking 2-0."],
+         "number": 11, "outlets": ["UEFA", "AP", "Sportradar"], "panel": "PARIS",
+         "pin": {"lat": 48.8566, "lon": 2.3522, "place": "Paris, France"}, "region": "EUROPE", "scene": "stadium",
+         "stats": [{"label": "PSG v Roma", "value": "2-2"}, {"label": "Lille v Bayern", "value": "2-1"}], "summary": ["PSG's perfect run ended in a 2-2 home draw with Roma."],
+         "tier": "grid", "urls": ["https://www.uefa.com/uefachampionsleague/news/02ab-22288f99d39c-d5631dd311d0-1000--champions-league-round-up-liverpool-and-barca-win-well-rom/"], "utc_hour": "21:55", "watch_next": "Whether Madrid keep the only perfect record through matchday six."
+      },
+      {
+         "certainty": "CONFIRMED", "context": "The Solomons sit on the sea route between the United States and Australia, which is why a security pact there carries weight far beyond the islands.",
+         "desk_note": "Signed in Canberra on Wednesday and carried by Reuters, CNN and AP within hours; the China angle is the story, so it leads the summary.", "headline": "Solomons pick Australia as top security partner",
+         "facts": ["Australia and Solomon Islands signed a security treaty in Canberra on Wednesday.", "The treaty names Australia the islands' primary security partner and says no foreign military or security base will stand on their soil.", "Australia will spend 740 million dollars over a decade, mostly grants, on policing, infrastructure, education and sport.", "Australian media reported the islands' 2022 security pact with China will not be renewed; Prime Minister Matthew Wale would not confirm it, citing a non-disclosure clause.", "The treaty needs ratification by both parliaments before it takes effect."],
+         "number": 12, "outlets": ["Reuters", "CNN", "AP", "Lowy Institute", "The Times"], "panel": "HONIARA",
+         "pin": {"lat": -9.433, "lon": 159.958, "place": "Honiara, Solomon Islands"}, "region": "OCEANIA", "scene": "treaty",
+         "stats": [{"label": "Australian funding", "value": "$740m"}, {"label": "China pact year", "value": "2022"}], "summary": ["Solomons signed a security treaty naming Australia its top partner."],
+         "tier": "grid", "urls": ["https://www.cnn.com/2026/11/24/australia/solomon-islands-australia-security-pact-intl-hnk?cid=external-feeds_iluminar_meta", "https://www.lowyinstitute.org/the-interpreter/power-influence-and-the-australia-solomon-islands-treaty"], "utc_hour": "02:00", "watch_next": "Ratification in both parliaments and Beijing's formal response."
+      },
+      {
+         "certainty": "REPORTED", "context": "China's station has flown only Chinese crews until now, so a foreign astronaut aboard is a first for the programme.",
+         "desk_note": "Three Indian aggregators carry it and agree on the name and the mission; the desk labels it REPORTED rather than CONFIRMED because no wire copy was in hand.", "headline": "Pakistan's first astronaut heads for China's station",
+         "facts": ["Muhammad Zeeshan Ali of Pakistan will fly on China's Shenzhou-24 mission to the Tiangong station.", "He is the first foreign astronaut to travel to the Chinese station.", "The announcement was reported across Indian outlets on 26 November."],
+         "number": 13, "outlets": ["SelfStudys", "Observer Voice", "StudMentor"], "panel": "TIANGONG",
+         "pin": {"lat": 39.9042, "lon": 116.4074, "place": "Beijing, China"}, "region": "ASIA", "scene": "rocket",
+         "stats": [{"label": "Mission", "value": "Shenzhou-24"}], "summary": ["Zeeshan Ali will be the first foreign astronaut aboard Tiangong."],
+         "tier": "grid", "urls": ["https://www.selfstudys.com/update/school-assembly-news-headlines-today-26-november-2026-constitution-day-sheikh-hasina-vaibhav-sooryavanshi-and-other-top-updates", "https://observervoice.com/todays-school-assembly-news-headlines-26-november-2026-255264/"], "utc_hour": "03:00", "watch_next": "The launch date and the crew's experiments aboard Tiangong."
+      },
+      {
+         "certainty": "CONFIRMED", "context": "The fall wiped out the previous day's record rally, which had followed Jensen Huang's return as Nvidia chief.",
+         "desk_note": "The figures are consistent across Taiwanese and international outlets; the desk uses the exchange's own closing numbers.", "headline": "Taiwan market sheds 1,927 points in a day",
+         "facts": ["The Taiex closed down 1,926.92 points, or 4.8 percent, at 38,195.43.", "It was the sixth-largest single-day points fall on record, after an intraday drop of 3,440.45.", "The New Taiwan dollar closed at 33.126 per US dollar, its lowest in nearly 20 months.", "Foreign investors sold a net 123.654 billion Taiwan dollars of shares in a day.", "The Philadelphia Semiconductor Index fell 7.88 percent overnight."],
+         "number": 14, "outlets": ["BigGo Finance", "SimpleLife News", "Finwire", "Central News Agency"], "panel": "TAIPEI",
+         "pin": {"lat": 25.033, "lon": 121.5654, "place": "Taipei, Taiwan"}, "region": "ASIA", "scene": "market",
+         "stats": [{"label": "Taiex fall", "value": "-1,927 pts"}, {"label": "NT dollar", "value": "33.126"}], "summary": ["Taiwan's market fell 1,927 points in a day, erasing the record rally of the day before.", "The currency slid past 33 to the dollar as foreign investors sold heavily."],
+         "tier": "brief", "urls": ["https://finance.biggo.com/news/d42446c9-e696-4eb3-83a3-84dbd807497c", "https://simplelife.news/regions/tw/en/latest.html"], "utc_hour": "05:30", "watch_next": "The October PCE data and the Section 301 findings, both flagged as the next catalysts."
+      },
+      {
+         "certainty": "OFFICIAL", "context": "The survey lands two weeks before the rate decision and alongside inflation data that points the same way.",
+         "desk_note": "An official Fed publication, so the label is OFFICIAL; the desk pairs it with the same-day GDP and PCE releases.", "headline": "Fed survey: growth holds as pay pressure builds",
+         "facts": ["Eight of the twelve Federal Reserve districts reported slight to moderate growth, and four reported no change.", "Employment edged up and wages and benefits rose moderately, faster than in the previous survey.", "Prices increased moderately overall, and firms expect costs and prices to keep rising.", "The personal consumption expenditures index rose 3.8 percent over the year in October.", "Third-quarter GDP was revised up to 4.3 percent annualised, the fastest in three years."],
+         "number": 15, "outlets": ["Bloomberg Law", "Morningstar", "TradingView", "InvestingLive"], "panel": "FED",
+         "pin": {"lat": 38.8977, "lon": -77.0365, "place": "Washington, United States"}, "region": "N. AMERICA", "scene": "market",
+         "stats": [{"label": "Districts growing", "value": "8 of 12"}, {"label": "PCE inflation", "value": "3.8%"}, {"label": "Q3 GDP", "value": "4.3%"}], "summary": ["The Federal Reserve's Beige Book found growth in eight of twelve districts, with wage pressure picking up.", "Inflation stayed sticky at 3.8 percent while GDP was revised up to 4.3 percent."],
+         "tier": "brief", "urls": ["https://news.bloomberglaw.com/banking-law/fed-beige-book-shows-moderate-growth-uptick-in-wage-pressures", "https://www.morningstar.com/news/dow-jones/202611256746/fed-contacts-expect-costs-and-prices-to-keep-rising-beige-book"], "utc_hour": "20:18", "watch_next": "The December 8-9 rate meeting, where markets price a hike as near certain."
+      },
+      {
+         "certainty": "CONFIRMED", "context": "The jets themselves arrived on 15 November; Wednesday was the first time the Air Force showed them to reporters at the base.",
+         "desk_note": "The desk frames the story on the 25 November display, not the 15 November arrival, and says so in the summary to keep the date honest.", "headline": "New US fighter jet shown off in Okinawa",
+         "facts": ["The Air Force showed its F-15EX Eagle II fighters to reporters at Kadena Air Base on Wednesday.", "It is the type's first permanent posting outside the United States.", "Two jets, the 22nd and 23rd built, arrived on 15 November.", "The Air Force plans 36 of the jets in Japan across two squadrons, replacing ageing F-15C and D aircraft."],
+         "number": 16, "outlets": ["Particle News", "Kyodo News", "Developments Today", "Boeing"], "panel": "KADENA",
+         "pin": {"lat": 26.3556, "lon": 127.768, "place": "Kadena, Okinawa, Japan"}, "region": "ASIA", "scene": "rocket",
+         "stats": [{"label": "Jets in Japan", "value": "2"}, {"label": "Planned total", "value": "36"}], "summary": ["The US Air Force showed off its new F-15EX fighters at Kadena in Okinawa, the type's first posting abroad.", "Two jets have arrived so far, with 36 planned for the base."],
+         "tier": "brief", "urls": ["http://particle.news/story/us-air-force-displays-f15ex-at-kadena-in-first-overseas-deployment", "https://www.gate.tr/en/news/detail/us-military-begins-deploying-f-15ex-fighter-jets-at-okinawa-base-on-52850"], "utc_hour": "01:00", "watch_next": "The next deliveries and the retirement pace of the old F-15C and D fleet."
+      },
+      {
+         "certainty": "CLAIM", "context": "The strait carries a large share of the world's seaborne oil, and traffic through it has already fallen by about half since the war began.",
+         "desk_note": "An Iranian claim carried by its state agency and an energy wire; unverified by independent shipping monitors, so the label stays CLAIM.", "headline": "Tehran says two more tankers hit mines",
+         "facts": ["The Revolutionary Guard navy said two oil tankers exploded early on Wednesday after hitting naval mines in the Strait of Hormuz.", "The vessels were on a route Iran says was not authorised, according to the statement carried by IRNA.", "The claims have not been independently verified, and the joint maritime centre said such claims were unconfirmed.", "Three other tankers were reported hit earlier in the week under similar claims."],
+         "number": 17, "outlets": ["OilPrice", "IRNA", "DefenceMENA", "Hellenic Shipping News"], "panel": "HORMUZ",
+         "pin": {"lat": 26.5667, "lon": 56.25, "place": "Strait of Hormuz"}, "region": "MIDDLE EAST", "scene": "refinery",
+         "stats": [{"label": "Tankers claimed hit", "value": "2"}], "summary": ["Iran said two more oil tankers struck naval mines in the Strait of Hormuz early on Wednesday.", "The claim is unverified, and shipping monitors have not confirmed the incidents."],
+         "tier": "brief", "urls": ["https://oilprice.com/Latest-Energy-News/World-News/Iran-Reports-Fresh-Tanker-Explosions-as-Hormuz-Attacks-Intensify.html", "https://defencemena.com/irgc-says-three-oil-tankers-hit-mines-hormuz/"], "utc_hour": "03:00", "watch_next": "Whether any owner, flag state or maritime monitor confirms a vessel, and where Brent goes next."
+      },
+      {
+         "certainty": "REPORTED", "context": "The refinery campaign had paused in mid-October and has picked up sharply since the end of last month.",
+         "desk_note": "Reuters is the spine via the hourly wire; the refinery names rest on monitoring channels and satellite fire data, so the label is REPORTED.", "headline": "Kyiv's drones set two Russian refineries ablaze",
+         "facts": ["Ukrainian drones struck the Syzran and Kuibyshev refineries in Samara region overnight, with fires at both.", "A third plant in Rostov region was also reported hit, along with the Savasleyka airbase.", "One person was killed in Samara, the regional governor said.", "President Vladimir Putin said on 24 November that retaliation was inevitable, saying Kyiv ignored a US request to stop hitting refineries.", "Russian refinery runs have fallen about 45 percent since late October, according to analysts.", "Russian drones killed seven people across six Ukrainian regions the same night."],
+         "number": 18, "outlets": ["Reuters", "Europa Journal News", "Zot News", "The Hourly News"], "panel": "SAMARA",
+         "pin": {"lat": 53.1959, "lon": 50.1002, "place": "Samara, Russia"}, "region": "EUROPE", "scene": "fire",
+         "stats": [{"label": "Refineries hit", "value": "2"}, {"label": "Refining fall", "value": "-45%"}], "summary": ["Ukrainian drones set fire to two Rosneft refineries deep inside Russia overnight, killing one person.", "Putin warned retaliation was inevitable as Russian refinery output fell about 45 percent."],
+         "tier": "brief", "urls": ["https://europajournalnews.com/footage-shows-two-rosneft-refineries-on-fire-hours-after-putin-called-retaliation-inevitable/", "https://thehourlynews.com/ukrainian-drones-strike-two-rosneft-refineries-deep-inside-russia-killing-one/"], "utc_hour": "02:00", "watch_next": "What form the promised Russian retaliation takes, and against which targets."
+      },
+      {
+         "certainty": "REPORTED", "context": "Moscow has rarely published its own losses, so a figure from its own count carries weight even as a report.",
+         "desk_note": "Two European outlets carry the figure; the desk labels it REPORTED because the underlying Russian publication was not in hand.", "headline": "Moscow's own count puts war dead near 500,000",
+         "facts": ["Russian figures cited in reports put the country's losses in the Ukraine war at nearly 500,000 people.", "The figure circulated in European coverage on 26 November."],
+         "number": 19, "outlets": ["Jagran Josh", "EUR Radio"], "panel": "KYIV",
+         "pin": {"lat": 50.4501, "lon": 30.5234, "place": "Kyiv, Ukraine"}, "region": "EUROPE", "scene": "strike",
+         "stats": [{"label": "War dead, own figures", "value": "~500,000"}], "summary": ["Russia's own figures show it has lost nearly 500,000 people in the war in Ukraine.", "The count circulated in European coverage on Thursday."],
+         "tier": "brief", "urls": ["https://www.jagranjosh.com/news/school-assembly-news-headlines-november-26-2026-top-national-world-education-business-news-189203", "https://eurradio.com/eur-news-episode/eur-radio-news-2026-11-26-0117/"], "utc_hour": "08:00", "watch_next": "Whether Moscow publishes the underlying breakdown and how Kyiv answers the figure."
+      },
+      {
+         "certainty": "CONFIRMED", "context": "The Swiss office had only reopened in October, after being shut during the pandemic, so the closure ends a five-week comeback.",
+         "desk_note": "Yonhap is the spine, with five more outlets in agreement on the names, the 48 hours and the camp at the centre of the row.", "headline": "North Korea throws Swiss envoy out",
+         "facts": ["North Korea ordered Switzerland to shut its diplomatic office in Pyongyang on Wednesday.", "The office head, Sylvain Astier, was declared persona non grata and told to leave within 48 hours.", "The row follows Swiss sanctions on the Songdowon International Children's Camp, accused of involvement in moving Ukrainian children from Russian-held territory.", "Kim Yo Jong, sister of the North's leader, had threatened the closure a day earlier.", "The office reopened in October when Swiss foreign minister Ignazio Cassis visited Pyongyang."],
+         "number": 20, "outlets": ["Yonhap", "TBS News", "Sowetan", "AJP", "The AZB"], "panel": "PYONGYANG",
+         "pin": {"lat": 39.0392, "lon": 125.7625, "place": "Pyongyang, North Korea"}, "region": "ASIA", "scene": "treaty",
+         "stats": [{"label": "Hours to leave", "value": "48"}], "summary": ["North Korea ordered Switzerland's Pyongyang office shut and its head out within 48 hours.", "The row follows Swiss sanctions on a youth camp accused of involvement in moving Ukrainian children."],
+         "tier": "brief", "urls": ["https://www.tbsnews.net/worldbiz/asia/north-korea-orders-swiss-diplomatic-office-closed-diplomat-leave-within-48-hours", "https://www.byteseu.com/2545160/"], "utc_hour": "07:00", "watch_next": "Whether Bern keeps relations running through Beijing and whether Pyongyang widens the row."
+      },
+      {
+         "certainty": "CONFIRMED", "context": "26 November is both Constitution Day and the anniversary of the 2008 attacks, so the day carries two national markers at once.",
+         "desk_note": "Three Indian outlets agree on both markers; the desk pairs them in one brief rather than splitting a thin story.", "headline": "India marks Constitution Day and 26/11 anniversary",
+         "facts": ["India observed Constitution Day on 26 November, 77 years after the constitution was adopted in 1949.", "The same day marked 18 years since the Mumbai attacks of 26 November 2008, in which more than 160 people died."],
+         "number": 21, "outlets": ["SelfStudys", "Observer Voice", "Jagran Josh"], "panel": "MUMBAI",
+         "pin": {"lat": 19.076, "lon": 72.8777, "place": "Mumbai, India"}, "region": "ASIA", "scene": "treaty",
+         "stats": [{"label": "Years since constitution", "value": "77"}, {"label": "Years since 26/11", "value": "18"}], "summary": ["India marked Constitution Day, 77 years since its constitution was adopted.", "The day also marked 18 years since the Mumbai attacks that killed more than 160 people."],
+         "tier": "brief", "urls": ["https://www.selfstudys.com/update/school-assembly-news-headlines-today-26-november-2026-constitution-day-sheikh-hasina-vaibhav-sooryavanshi-and-other-top-updates", "https://observervoice.com/todays-school-assembly-news-headlines-26-november-2026-255264/"], "utc_hour": "05:00", "watch_next": "The official commemorations in Delhi and Mumbai through the day."
+      },
+      {
+         "certainty": "OFFICIAL", "context": "Nepal's new prime minister met Modi in Delhi, and the package is the first big deliverable of the visit.",
+         "desk_note": "Two Indian outlets carry the figure and the meeting; the label is OFFICIAL because it rests on the government announcement.", "headline": "India offers Nepal a ₹15,000-crore package",
+         "facts": ["India announced development assistance worth 15,000 crore rupees for Nepal.", "The announcement followed talks between Prime Minister Narendra Modi and Nepal's Prime Minister Balendra Shah.", "The package covers development and connectivity."],
+         "number": 22, "outlets": ["SelfStudys", "StudMentor"], "panel": "KATHMANDU",
+         "pin": {"lat": 27.7172, "lon": 85.324, "place": "Kathmandu, Nepal"}, "region": "ASIA", "scene": "treaty",
+         "stats": [{"label": "Package", "value": "₹15,000 cr"}], "summary": ["India announced a 15,000-crore-rupee development package for Nepal after talks in Delhi.", "Prime Minister Modi met Nepal's Prime Minister Balendra Shah for the announcement."],
+         "tier": "brief", "urls": ["https://www.selfstudys.com/update/school-assembly-news-headlines-today-26-november-2026-constitution-day-sheikh-hasina-vaibhav-sooryavanshi-and-other-top-updates", "https://studmentor.in/news-headlines-for-school-assembly-26-november-2026/"], "utc_hour": "12:00", "watch_next": "Which projects the package funds first and when the money starts flowing."
+      },
+      {
+         "certainty": "OFFICIAL", "context": "The new seats target the technologies Delhi wants its engineers to lead in, and they start from 2027.",
+         "desk_note": "Three outlets agree on the number and the fields; the desk keeps it short because the announcement is thin on detail.", "headline": "IITs to add 6,000 tech seats",
+         "facts": ["India's technology institutes will add 6,000 seats in robotics, artificial intelligence and space technology.", "The new seats start from 2027."],
+         "number": 23, "outlets": ["SelfStudys", "Observer Voice", "StudMentor"], "panel": "DELHI",
+         "pin": {"lat": 28.6139, "lon": 77.209, "place": "New Delhi, India"}, "region": "ASIA", "scene": "chip",
+         "stats": [{"label": "New seats", "value": "6,000"}], "summary": ["India's IITs will add 6,000 seats in robotics, AI and space technology from 2027.", "The expansion was announced in Delhi on Thursday."],
+         "tier": "brief", "urls": ["https://www.selfstudys.com/update/school-assembly-news-headlines-today-26-november-2026-constitution-day-sheikh-hasina-vaibhav-sooryavanshi-and-other-top-updates", "https://observervoice.com/todays-school-assembly-news-headlines-26-november-2026-255264/"], "utc_hour": "11:00", "watch_next": "Which institutes get the seats and how admissions change."
+      },
+      {
+         "certainty": "CONFIRMED", "context": "The innings came for India A against the UAE in Doha, in a List A match, and it broke two records in one knock.",
+         "desk_note": "Three outlets agree on the runs, the balls and the age; the desk uses the match report figures, not the hype.", "headline": "Fifteen-year-old smashes record 204 off 53 balls",
+         "facts": ["Vaibhav Sooryavanshi, 15, scored 204 runs off 53 balls for India A against the UAE.", "It is the fastest double century in List A cricket, and he also set the fastest century off 28 balls.", "The match was played in Doha."],
+         "number": 24, "outlets": ["SelfStudys", "Observer Voice", "StudMentor"], "panel": "DOHA",
+         "pin": {"lat": 25.2854, "lon": 51.531, "place": "Doha, Qatar"}, "region": "ASIA", "scene": "stadium",
+         "stats": [{"label": "Runs", "value": "204"}, {"label": "Balls", "value": "53"}, {"label": "Age", "value": "15"}], "summary": ["Fifteen-year-old Vaibhav Sooryavanshi smashed 204 off 53 balls for India A against the UAE.", "It is the fastest double century in List A cricket, with the fastest hundred off 28 balls."],
+         "tier": "brief", "urls": ["https://www.selfstudys.com/update/school-assembly-news-headlines-today-26-november-2026-constitution-day-sheikh-hasina-vaibhav-sooryavanshi-and-other-top-updates", "https://observervoice.com/todays-school-assembly-news-headlines-26-november-2026-255264/"], "utc_hour": "13:00", "watch_next": "Whether the teenager keeps his place for the next India A fixture."
+      },
+      {
+         "certainty": "CONFIRMED", "context": "The match is the youngest title contest in chess history: both players are 20.",
+         "desk_note": "The chess press agrees on the scores and the schedule; the desk frames the brief on game three, which is today's event.", "headline": "Chess title match level at 1-1 as game three looms",
+         "facts": ["Defending champion Gukesh Dommaraju and challenger Javokhir Sindarov drew the first two games in Geneva.", "Game one lasted 38 moves and game two ended in 20 moves.", "The score stands at 1-1, and game three is played on Thursday with Sindarov holding white.", "The match runs to 14 classical games, with the first to seven and a half points taking the title."],
+         "number": 25, "outlets": ["Bogner Chess", "The Week in Chess", "World Chess"], "panel": "GENEVA",
+         "pin": {"lat": 46.2044, "lon": 6.1432, "place": "Geneva, Switzerland"}, "region": "EUROPE", "scene": "treaty",
+         "stats": [{"label": "Score", "value": "1-1"}, {"label": "Games", "value": "14"}], "summary": ["Gukesh and Sindarov drew the first two games of the world title match in Geneva.", "The score is level at 1-1, with game three played on Thursday."],
+         "tier": "brief", "urls": ["https://www.bognerchess.com/en/events/world-chess-championship-2026", "https://theweekinchess.com/chessnews/events/world-chess-championship-2026"], "utc_hour": "16:00", "watch_next": "Game three on Thursday afternoon and whether either player breaks the deadlock."
+      },
+      {
+         "certainty": "OFFICIAL", "context": "The register is the starting list; franchises now pick the names they want in the final auction pool.",
+         "desk_note": "The league's own media advisory is the spine, with three more outlets in agreement on every number.", "headline": "1,220 players sign up for IPL auction",
+         "facts": ["A total of 1,220 players feature on the auction register for the IPL 2027 mini-auction.", "The list holds 939 Indian players and 281 overseas players from 17 countries.", "Ten franchises have 66 slots to fill, including 25 overseas places, and have already retained 184 players.", "Ben Stokes headlines the register with a base price of two crore rupees.", "The auction takes place on 16 December in Goa, and the final list comes out on 4 December."],
+         "number": 26, "outlets": ["IPLT20", "Wisden", "CricTracker", "Zee News"], "panel": "GOA",
+         "pin": {"lat": 15.2993, "lon": 74.124, "place": "Goa, India"}, "region": "ASIA", "scene": "stadium",
+         "stats": [{"label": "Players registered", "value": "1,220"}, {"label": "Slots open", "value": "66"}], "summary": ["A total of 1,220 players registered for the IPL 2027 auction, chasing 66 open slots.", "Ben Stokes headlines the list at a base price of two crore rupees; the auction is on 16 December in Goa."],
+         "tier": "brief", "urls": ["https://www.iplt20.com/news/article/1-220-players-feature-on-auction-register-for-tata-ipl-2027-player-auction", "https://www.wisden.com/series/ipl-2027/cricket-news/ipl-2027-auction-two-japan-cricketers-in-1220-strong-initial-longlist"], "utc_hour": "10:00", "watch_next": "The final auction list on 4 December and the bidding in Goa."
+      },
+      {
+         "certainty": "CONFIRMED", "context": "The exit lands as the Walmart-owned retailer weighs the timing of its long-awaited public listing.",
+         "desk_note": "TechCrunch, Reuters and Forbes India agree on the date, the interim chief and the silence on reasons; the desk keeps the reported Walmart friction as reported, not fact.", "headline": "Flipkart chief steps down after 11 years",
+         "facts": ["Flipkart chief executive Kalyan Krishnamurthy is stepping down after more than 11 years with the company.", "His last day will be 4 December, and a successor will be named in the coming weeks.", "Chief product and technology officer Balaji Thiagarajan will lead the company in the interim with the board.", "Neither Flipkart nor Walmart gave an official reason for the exit.", "Sources told several outlets that Walmart leadership had asked him to leave, amid uncertainty over the IPO."],
+         "number": 27, "outlets": ["TechCrunch", "Reuters", "Forbes India", "Inc42", "YourStory"], "panel": "BENGALURU",
+         "pin": {"lat": 12.9716, "lon": 77.5946, "place": "Bengaluru, India"}, "region": "ASIA", "scene": "market",
+         "stats": [{"label": "Years at Flipkart", "value": "11+"}, {"label": "Last day", "value": "4 Dec"}], "summary": ["Flipkart chief Kalyan Krishnamurthy is stepping down after more than 11 years, with his last day on 4 December.", "The product chief leads in the interim as the company weighs its IPO timing."],
+         "tier": "brief", "urls": ["https://techcrunch.com/2026/11/25/flipkart-ceo-kalyan-krishnamurthy-to-step-down-next-week-amid-ipo-uncertainty/", "https://www.forbesindia.com/leadership/kalyan-krishnamurthy-steps-down-as-flipkart-ceo-after-11-years-article/3001024"], "utc_hour": "09:00", "watch_next": "Who the permanent successor is, and when the IPO timetable firms up."
+      },
+      {
+         "certainty": "CONFIRMED", "context": "Taylor died on Monday, but the news only reached the public on Wednesday, which is why the story belongs to this edition.",
+         "desk_note": "Reuters, CNN, USA Today and AP agree on the day, the cause and the announcement; the desk dates the story to the announcement.", "headline": "Duran Duran guitarist Andy Taylor dies at 65",
+         "facts": ["Andy Taylor, the original guitarist of Duran Duran, died at 65 on Monday, 23 November.", "His family and former bandmates announced the death in a joint statement on Wednesday, 25 November.", "He died peacefully at home after a long battle with metastatic prostate cancer, diagnosed in 2018.", "Taylor co-wrote the band's biggest hits, including Rio, Hungry Like the Wolf and The Reflex.", "He was inducted into the Rock and Roll Hall of Fame with the band in 2022."],
+         "number": 28, "outlets": ["Reuters", "CNN", "USA Today", "AP", "People"], "panel": "IBIZA",
+         "pin": {"lat": 38.9806, "lon": 1.4333, "place": "Ibiza, Spain"}, "region": "EUROPE", "scene": "treaty",
+         "stats": [{"label": "Age", "value": "65"}], "summary": ["Duran Duran guitarist Andy Taylor died at 65 after a long battle with prostate cancer.", "His death on Monday was announced by his family and bandmates on Wednesday."],
+         "tier": "brief", "urls": ["https://www.reuters.com/lifestyle/duran-duran-guitarist-songwriter-andy-taylor-dies-65-2026-11-25/", "https://www.cnn.com/2026/11/25/entertainment/andy-taylor-duran-duran-death?cid=external-feeds_iluminar_meta"], "utc_hour": "22:33", "watch_next": "Tributes from the band and funeral arrangements."
+      },
+      {
+         "certainty": "CONFIRMED", "context": "The fight ran since 2022, when Pitt sued over the sale of Jolie's stake in the estate where they married.",
+         "desk_note": "Two outlets carry the joint statement; the desk keeps it short because both sides declined further comment.", "headline": "Jolie and Pitt settle winery fight",
+         "facts": ["Brad Pitt and Angelina Jolie settled their legal battle over the French winery Chateau Miraval.", "The estate is the vineyard they bought in 2008 and where they married in 2014.", "Pitt sued in 2022 after Jolie sold her stake, saying she broke an agreement not to sell.", "Both sides said they settled out of court in the best interests of their family and would not comment further."],
+         "number": 29, "outlets": ["BBC", "The Guardian"], "panel": "MIRAVAL",
+         "pin": {"lat": 43.5263, "lon": 6.2107, "place": "Provence, France"}, "region": "EUROPE", "scene": "treaty",
+         "stats": [{"label": "Years in dispute", "value": "4"}], "summary": ["Brad Pitt and Angelina Jolie settled their years-long legal fight over the French winery Chateau Miraval.", "Both said the out-of-court deal served their family's best interests."],
+         "tier": "brief", "urls": ["https://www.bbc.co.uk/news/articles/cmvg2989wv74o?at_medium=RSS&at_campaign=rss", "https://www.theguardian.com/film/2026/nov/25/brad-pitt-angelina-jolie-settle-french-winery-lawsuit"], "utc_hour": "15:00", "watch_next": "Whether the settlement terms ever surface, and what happens to the estate."
+      },
+      {
+         "certainty": "CONFIRMED", "context": "The arrest came on 6 November, but the charge itself is the day's news.",
+         "desk_note": "Two wires carry the charge; the desk does not repeat the detail of the material beyond what the charge states.", "headline": "Thomas Markle charged over abuse images",
+         "facts": ["Thomas Markle was charged in the United States with possessing child sexual abuse images.", "The FBI arrested him on 6 November after searching a storage unit he had rented in Los Angeles.", "The search uncovered the abuse material, according to the reports."],
+         "number": 30, "outlets": ["BBC", "Reuters"], "panel": "LOS ANGELES",
+         "pin": {"lat": 34.0522, "lon": -118.2437, "place": "Los Angeles, United States"}, "region": "N. AMERICA", "scene": "siege",
+         "stats": [{"label": "Counts", "value": "2"}], "summary": ["Thomas Markle was charged in the US over possessing child sexual abuse images.", "The FBI arrested him on 6 November after a search of a Los Angeles storage unit."],
+         "tier": "brief", "urls": ["https://www.bbc.co.uk/news/articles/crwy4egxn592o?at_medium=RSS&at_campaign=rss"], "utc_hour": "17:00", "watch_next": "The first court date and whether further charges follow."
+      },
+      {
+         "certainty": "OFFICIAL", "context": "Hasina announced the date on Tuesday; Delhi's response on Wednesday is the new development, and it is what this brief reports.",
+         "desk_note": "The brief is built on the 25 November Indian response, not the 24 November announcement, and the summary says so.", "headline": "India: Hasina return plan separate from extradition",
+         "facts": ["India's foreign ministry said on Wednesday that Sheikh Hasina's plan to return voluntarily is separate from Dhaka's extradition request.", "Hasina, ousted in August 2024, said she plans to return from exile in India on 16 December, Bangladesh's Victory Day.", "Her spokesperson said the government should arrange her flight on the national carrier.", "Dhaka says she can only return through extradition and faces a death sentence handed down in her absence.", "A Bangladeshi minister said she would be arrested and jailed on return."],
+         "number": 31, "outlets": ["Reuters", "TBS News", "AP", "The Hindu BusinessLine"], "panel": "DHAKA",
+         "pin": {"lat": 23.8103, "lon": 90.4125, "place": "Dhaka, Bangladesh"}, "region": "ASIA", "scene": "treaty",
+         "stats": [{"label": "Return date set", "value": "16 Dec"}], "summary": ["India said the exiled former prime minister's plan to return on 16 December is separate from Dhaka's extradition bid.", "Dhaka insists she can only return in custody to face a death sentence."],
+         "tier": "brief", "urls": ["https://www.reuters.com/world/asia-pacific/india-says-hasinas-plan-return-bangladesh-separate-extradition-request-2026-11-25/", "https://www.tbsnews.net/bangladesh/sheikh-hasina-seeks-return-bangladesh-16-december-state-carrier-1612171"], "utc_hour": "12:00", "watch_next": "Whether Delhi moves on the extradition request and whether Hasina boards a plane on 16 December."
+      },
+      {
+         "certainty": "CONFIRMED", "context": "DART was the first test of shoving an asteroid off course; Hera is the inspection that shows what the shove actually did.",
+         "desk_note": "Reuters is the spine, with the space press in agreement on the crater, the tumbling and the boulders; the desk uses ESA's own numbers.", "headline": "Hera shows asteroid smashed flat by DART",
+         "facts": ["The European Space Agency unveiled the first close-up images of Dimorphos from its Hera spacecraft on 25 November.", "One side of the moonlet is flattened by a stadium-sized crater from the 2022 DART impact.", "The impact knocked Dimorphos into a chaotic tumble, out of its old locked spin.", "Hundreds of boulders, some a metre across, orbit the Didymos and Dimorphos pair.", "Dimorphos is 151 metres wide and orbits Didymos, 730 metres wide, about 193.5 million kilometres from Earth.", "Hera will move closer next month and deploy two small CubeSats in January."],
+         "number": 32, "outlets": ["Reuters", "IAC", "Sky and Telescope", "EarthSky"], "panel": "DIMORPHOS",
+         "pin": {"lat": 52.52, "lon": 13.405, "place": "Berlin, Germany"}, "region": "EUROPE", "scene": "rocket",
+         "stats": [{"label": "Moonlet width", "value": "151 m"}, {"label": "Impact speed", "value": "22,530 km/h"}], "summary": ["ESA's Hera spacecraft revealed the first close-ups of Dimorphos, flattened by a stadium-sized crater.", "The DART impact also left the moonlet tumbling chaotically, with hundreds of boulders orbiting nearby."],
+         "tier": "brief", "urls": ["https://www.reuters.com/science/new-images-reveal-crater-asteroid-struck-by-dart-spacecraft-2026-11-25/", "https://www.iac.es/en/outreach/news/esas-hera-mission-reveals-first-images-asteroid-dimorphos-after-dart-impact"], "utc_hour": "11:00", "watch_next": "Hera's closer approach next month and the CubeSat deployment in January."
+      },
+      {
+         "certainty": "CONFIRMED", "context": "The ruling does not ban cages by itself; it orders the Commission to say when it will act, after a promise made in 2021.",
+         "desk_note": "The court judgment is the spine, carried by several European outlets; the desk stresses the ruling orders a timetable, not a ban.", "headline": "EU court: cage-ban promise must get a date",
+         "facts": ["The EU General Court ruled on 25 November that the European Commission failed to meet its promise on the End the Cage Age initiative.", "The citizens' initiative gathered nearly 1.4 million signatures in 2020.", "The Commission promised in 2021 to propose a ban by the end of 2023, then never set a new date.", "About 300 million farmed animals are still kept in cages across the EU.", "The Commission is expected to present a proposal for laying hens on 9 December."],
+         "number": 33, "outlets": ["Rapporteur", "Europe Says", "Politico", "EU Perspectives"], "panel": "LUXEMBOURG",
+         "pin": {"lat": 49.6116, "lon": 6.1319, "place": "Luxembourg"}, "region": "EUROPE", "scene": "treaty",
+         "stats": [{"label": "Signatures", "value": "1.4m"}, {"label": "Animals caged", "value": "300m"}], "summary": ["An EU court ruled the Commission failed its promise to end cage farming and must now set a date.", "The 2020 citizens' initiative drew 1.4 million signatures, yet 300 million animals remain caged."],
+         "tier": "brief", "urls": ["https://www.rapporteur.com/news/commission-failed-to-meet-cage-phase-out-promise-says-eu-top-court/", "https://www.europesays.com/europe/190036/"], "utc_hour": "11:36", "watch_next": "The 9 December proposal for hens, and whether pigs and other animals get dates too."
+      },
+      {
+         "certainty": "REPORTED", "context": "The warning lands in the same week Nvidia's boardroom chaos and a market rout put AI valuations on trial.",
+         "desk_note": "The Wall Street Journal is the spine, reprinted in The Times; the desk reports the economists' split, not a verdict.", "headline": "AI bust 'could outdo dot-com', economists warn",
+         "facts": ["Barclays estimates AI investment supplied 25 percent of US economic growth over the past year.", "Data-centre construction added about half a percentage point to GDP growth, according to the bank.", "Stocks now make up 35 percent of household net worth, against 26 percent at the dot-com peak.", "Some economists say an AI bust could hurt more than the dot-com crash, which cut the Nasdaq by close to 80 percent.", "Others argue the fallout would be smaller, since the economy is broader than the AI trade."],
+         "number": 34, "outlets": ["The Wall Street Journal", "The Times", "Atlas360"], "panel": "AI BUST",
+         "pin": {"lat": 38.8977, "lon": -77.0365, "place": "Washington, United States"}, "region": "N. AMERICA", "scene": "market",
+         "stats": [{"label": "AI share of growth", "value": "25%"}, {"label": "Stocks of net worth", "value": "35%"}], "summary": ["Economists warned an AI bust could hurt more than the dot-com crash, after a week of wild market swings.", "Barclays puts AI at a quarter of US growth, with stocks now a bigger share of household wealth than in 2000."],
+         "tier": "brief", "urls": ["https://www.wsj.com/economy/worse-than-the-dot-com-crash-what-an-ai-bust-could-mean-for-the-economy-2a0e5ab3", "https://www.thetimes.com/business/wsj/article/worse-than-the-dot-com-crash-what-an-ai-bust-could-mean-for-the-economy-2hccblpfq"], "utc_hour": "14:00", "watch_next": "The October PCE data, the December Fed meeting, and whether AI stocks stabilise."
+      },
+      {
+         "certainty": "OFFICIAL", "context": "The five decisions together are the cabinet's biggest infrastructure push of the season, and they were announced in one briefing.",
+         "desk_note": "ANI is the spine, with three more outlets in agreement on all three headline numbers; the label is OFFICIAL.", "headline": "India cabinet clears ₹19,934-crore package",
+         "facts": ["The Union Cabinet approved five projects and schemes worth 19,934 crore rupees on Wednesday.", "The package includes an 11,000-crore scheme to build construction and infrastructure equipment manufacturing.", "A second container terminal at Kamarajar Port in Tamil Nadu was cleared at 4,288.26 crore rupees, adding two million TEU a year.", "A greenfield airport at Doloo in Silchar, Assam, was cleared at 2,014 crore rupees, with a terminal for 800 peak-hour passengers.", "Two postal infrastructure schemes worth 2,632 crore rupees were also continued."],
+         "number": 35, "outlets": ["ANI", "Particle News", "Devdiscourse", "Observer Voice"], "panel": "NEW DELHI",
+         "pin": {"lat": 28.6139, "lon": 77.209, "place": "New Delhi, India"}, "region": "ASIA", "scene": "factory",
+         "stats": [{"label": "Total package", "value": "₹19,934 cr"}, {"label": "Port terminal", "value": "₹4,288 cr"}, {"label": "Airport", "value": "₹2,014 cr"}], "summary": ["India's cabinet cleared a 19,934-crore-rupee package of manufacturing, port and airport projects.", "The biggest items are a second terminal at Kamarajar Port and a new airport at Silchar."],
+         "tier": "brief", "urls": ["https://www.dailyprabhat.com/cabinet-approves-rs-4288-crore-second-container-terminal-at-kamarajar-port-rs-2014-crore-airport-in-assam/", "http://particle.news/story/cabinet-approves-new-silchar-airport-and-second-container-terminal-at-kamarajar-port"], "utc_hour": "13:00", "watch_next": "The concession award for the port terminal and the start of work at Silchar."
+      },
+      {
+         "certainty": "REPORTED", "context": "The actress died in August; the estate filing is the new development, and the desk reports it as such.",
+         "desk_note": "The death itself is August news and stays out of the headline; the filing is the story, carried by two US outlets.", "headline": "Klitschko seeks control of Panettiere's $6.2m estate",
+         "facts": ["Wladimir Klitschko, the late actress's former partner, filed in a Los Angeles court to have an administrator appointed over her estate.", "The estate is worth at least 6.232 million dollars, including about 5.2 million in personal property.", "Her daughter Kaya, 11, stands to inherit; she died without leaving a will.", "Panettiere died on 16 August at 36, and the coroner ruled the death an accidental overdose involving fentanyl and other drugs.", "South Carolina police closed their investigation after the coroner's ruling."],
+         "number": 36, "outlets": ["USA Today", "Parade", "TMZ"], "panel": "LOS ANGELES",
+         "pin": {"lat": 34.0522, "lon": -118.2437, "place": "Los Angeles, United States"}, "region": "N. AMERICA", "scene": "treaty",
+         "stats": [{"label": "Estate value", "value": "$6.2m"}], "summary": ["The former partner of Hayden Panettiere asked a Los Angeles court to put an administrator over her 6.2-million-dollar estate.", "Her 11-year-old daughter stands to inherit; the actress died in August and left no will."],
+         "tier": "brief", "urls": ["https://www.usatoday.com/story/entertainment/celebrities/2026/11/24/hayden-panettiere-death-wladimir-klitschko-estate-value/92948082007/", "https://parade.com/entertainment/hayden-panettiere-died-without-a-will-leaving-a-6-2-million-fortune-for-11-year-old-daughter-kayanow-wladimir-klitschko-is-stepping-in"], "utc_hour": "16:00", "watch_next": "Whether the court appoints the administrator and how the estate is divided."
       }
    ],
-   "regions": [
-      {
-         "count": 1,
-         "name": "AFRICA"
-      },
-      {
-         "count": 3,
-         "name": "MIDDLE EAST"
-      },
-      {
-         "count": 9,
-         "name": "EUROPE"
-      },
-      {
-         "count": 14,
-         "name": "ASIA"
-      },
-      {
-         "count": 7,
-         "name": "N. AMERICA"
-      },
-      {
-         "count": 1,
-         "name": "S. AMERICA"
-      },
-      {
-         "count": 1,
-         "name": "OCEANIA"
-      }
-   ],
-   "stories": [
-      {
-         "certainty": "CONFIRMED",
-         "context": "The ring road is the main artery around a capital of more than 20 million people, so a tanker fire there stops the city as well as killing.",
-         "desk_note": "Lead story on scale and certainty: seven outlets carried the same toll within hours, and the health ministry figure is the one every wire used.",
-         "facts": [
-            "The tanker overturned on a busy ring road encircling Cairo and caught fire.",
-            "The blaze spread to more than two dozen cars and motorcycles.",
-            "Egyptian health officials put the dead at 31 and the injured at 21."
-         ],
-         "headline": "Tanker fire on Cairo ring road kills 31",
-         "number": 1,
-         "outlets": [
-            "AP",
-            "BBC",
-            "The Guardian",
-            "Reuters",
-            "CNN",
-            "The New York Times",
-            "Sky News"
-         ],
-         "panel": "CAIRO",
-         "pin": {
-            "lat": 30.0444,
-            "lon": 31.2357,
-            "place": "Cairo, Egypt"
-         },
-         "region": "AFRICA",
-         "scene": "fire",
-         "stats": [
-            {
-               "label": "Dead",
-               "value": "31"
-            },
-            {
-               "label": "Injured",
-               "value": "21"
-            }
-         ],
-         "summary": [
-            "A fuel tanker overturned on the Cairo ring road and burst into flames. At least 31 people died and 21 were hurt, the health ministry said."
-         ],
-         "tier": "feature",
-         "urls": [
-            "https://www.bbc.co.uk/news/articles/cqy7rn30v314o?at_medium=RSS&at_campaign=rss",
-            "https://www.theguardian.com/world/2026/nov/25/people-killed-fuel-tanker-crash-ignites-large-fire-cairo-highway"
-         ],
-         "utc_hour": "07:00",
-         "watch_next": "Whether the toll rises as hospitals report, and what the traffic inquiry finds about the tanker."
-      },
-      {
-         "certainty": "CLAIM",
-         "context": "Ras Tanura is the kingdom's largest refinery and sits beside one of the world's biggest crude export terminals, so any threat to it moves oil prices at once.",
-         "desk_note": "Carried as a claim, not a confirmed strike: the Houthi announcement and the smoke are solid, the damage is not, and Riyadh has not confirmed a hit.",
-         "facts": [
-            "Houthi military spokesman Yahya Saree announced two operations, one against the Ras Tanura refinery and one against the financial district in Riyadh.",
-            "Satellite images showed a large black smoke plume over the coast near Ras Tanura.",
-            "Saudi Arabia said four drones were intercepted and has not confirmed the refinery was hit.",
-            "The Saudi-led coalition said it struck the Yemeni port of Hodeidah in reply.",
-            "Brent crude rose past 94 dollars a barrel on the news."
-         ],
-         "headline": "Houthis say they hit Saudi refinery; oil jumps past $94",
-         "number": 2,
-         "outlets": [
-            "Reuters",
-            "CGTN America",
-            "Firstpost",
-            "Dhaka Tribune",
-            "Democracy Now",
-            "Middle East Eye"
-         ],
-         "panel": "RAS TANURA",
-         "pin": {
-            "lat": 26.65,
-            "lon": 50.05,
-            "place": "Ras Tanura, Saudi Arabia"
-         },
-         "region": "MIDDLE EAST",
-         "scene": "refinery",
-         "stats": [
-            {
-               "label": "Brent",
-               "value": "$94.61"
-            },
-            {
-               "label": "Capacity",
-               "value": "550,000 bpd"
-            }
-         ],
-         "summary": [
-            "Houthis said they struck the Ras Tanura refinery and Riyadh's financial district. Pictures showed a smoke plume; Riyadh said four drones were downed."
-         ],
-         "tier": "feature",
-         "urls": [
-            "https://www.threads.com/@reuters/post/DgKiKU7kazB",
-            "https://www.instagram.com/reel/DgLN37oCbik/",
-            "https://www.instagram.com/p/DgKs0ktF7ic/"
-         ],
-         "utc_hour": "05:00",
-         "watch_next": "Whether Riyadh confirms damage, whether the coalition widens its reply, and where Brent settles."
-      },
-      {
-         "certainty": "CONFIRMED",
-         "context": "The rout mixed three drivers at once: AI valuations, a new tariff salvo, and inflation data that pointed to another rate rise.",
-         "desk_note": "Lead business story on the scale of the swing: the morning low and the close are both on the record from several wires, and the comeback is the day's market story.",
-         "facts": [
-            "The Dow Jones fell more than 1,100 points in the morning, then recovered to close at 50,183, up 0.33 percent.",
-            "The S and P 500 closed down 0.25 percent at 7,183 and the Nasdaq Composite down 0.62 percent at 23,586.",
-            "The Nasdaq had been down nearly 4 percent and the S and P more than 3 percent at the lows.",
-            "Nvidia shares fell about 4 percent as the AI selloff deepened.",
-            "Markets were closed the next day for Thanksgiving, with a half session on Friday."
-         ],
-         "headline": "Dow claws back a 1,100-point plunge to end higher",
-         "number": 3,
-         "outlets": [
-            "Investopedia",
-            "Motley Fool",
-            "LA Post",
-            "Reuters",
-            "CBOE",
-            "TradingView"
-         ],
-         "panel": "WALL ST",
-         "pin": {
-            "lat": 40.7128,
-            "lon": -74.006,
-            "place": "New York, United States"
-         },
-         "region": "N. AMERICA",
-         "scene": "market",
-         "stats": [
-            {
-               "label": "Dow",
-               "value": "50,183"
-            },
-            {
-               "label": "Low",
-               "value": "-1,100 pts"
-            },
-            {
-               "label": "Nvidia",
-               "value": "-4%"
-            }
-         ],
-         "summary": [
-            "Wall Street staged a late comeback after a morning rout on AI shares and tariff fears. The Dow erased a 1,100-point loss to close up 0.33 percent."
-         ],
-         "tier": "feature",
-         "urls": [
-            "https://www.investopedia.com/stock-market-today-dow-jones-s-and-p-500-nasdaq-11252026-12279355",
-            "https://www.fool.com/coverage/stock-market-today/2026/11/25/stock-market-today-nov-25-dow-erases-1-100-point-loss-as-wall-street-stages-dramatic-late-day-comeback/?source=iedfolrf0000001"
-         ],
-         "utc_hour": "21:00",
-         "watch_next": "Friday's half session, the October PCE data, and whether the AI selloff resumes."
-      },
-      {
-         "certainty": "CONFIRMED",
-         "context": "The killing of a senior internal security figure tests a ceasefire that was already under strain.",
-         "desk_note": "Two wires and medics agree on the names and the toll; the ceasefire strain angle is carried in the background briefing.",
-         "facts": [
-            "Abu al-Ouf headed the internal security service of Hamas in northern Gaza.",
-            "He died alongside his wife and two teenage daughters, according to doctors.",
-            "The strike hit Gaza City."
-         ],
-         "headline": "Israeli strike kills Hamas security chief, family",
-         "number": 4,
-         "outlets": [
-            "BBC",
-            "Reuters"
-         ],
-         "panel": "GAZA",
-         "pin": {
-            "lat": 31.5,
-            "lon": 34.4668,
-            "place": "Gaza City"
-         },
-         "region": "MIDDLE EAST",
-         "scene": "strike",
-         "stats": [
-            {
-               "label": "Family members killed",
-               "value": "4"
-            }
-         ],
-         "summary": [
-            "Hamas security chief Abu al-Ouf was killed with his family."
-         ],
-         "tier": "grid",
-         "urls": [
-            "https://www.bbc.co.uk/news/articles/cmd718zydz9qo?at_medium=RSS&at_campaign=rss"
-         ],
-         "utc_hour": "06:00",
-         "watch_next": "Whether the ceasefire holds and whether Hamas names a successor."
-      },
-      {
-         "certainty": "CONFIRMED",
-         "context": "The siege fell on the tenth anniversary of the FARC peace deal, a day Colombia was already marking.",
-         "desk_note": "Early wires differed on the hostage count; the desk uses the BBC figure of 76, which the later reports settled on.",
-         "facts": [
-            "Armed men held 76 people inside a supermarket in Cartagena, a major tourist city.",
-            "The standoff lasted 17 hours before police stormed the building.",
-            "One gunman was killed in the rescue.",
-            "The president described the episode as a robbery of a cash-laden armoured car that went wrong."
-         ],
-         "headline": "Police end 17-hour supermarket siege",
-         "number": 5,
-         "outlets": [
-            "BBC",
-            "ABC News",
-            "NBC News",
-            "Reuters",
-            "Le Monde"
-         ],
-         "panel": "CARTAGENA",
-         "pin": {
-            "lat": 10.391,
-            "lon": -75.479,
-            "place": "Cartagena, Colombia"
-         },
-         "region": "S. AMERICA",
-         "scene": "siege",
-         "stats": [
-            {
-               "label": "Hostages freed",
-               "value": "76"
-            },
-            {
-               "label": "Hours held",
-               "value": "17"
-            }
-         ],
-         "summary": [
-            "Police freed 76 people from a 17-hour siege in Cartagena."
-         ],
-         "tier": "grid",
-         "urls": [
-            "https://www.bbc.co.uk/news/articles/ckp80mjr9emyo?at_medium=RSS&at_campaign=rss"
-         ],
-         "utc_hour": "11:00",
-         "watch_next": "Charges against any surviving gunmen and the inquiry into the armoured car robbery."
-      },
-      {
-         "certainty": "CONFIRMED",
-         "context": "The parade's balloons are the signature image of the American Thanksgiving morning, so moving the whole event is a rare call.",
-         "desk_note": "Three wires agree it is a first; the desk keeps the 'first time ever' framing because all three used it.",
-         "facts": [
-            "The parade was postponed from Thursday to Saturday because of storm winds.",
-            "It is the first time the parade has ever been delayed for weather.",
-            "Forecasters expected winds of 12 to 25 miles per hour with rain later on Thursday."
-         ],
-         "headline": "Storm delays Macy's parade for the first time",
-         "number": 6,
-         "outlets": [
-            "AP",
-            "BBC",
-            "The Guardian"
-         ],
-         "panel": "PARADE",
-         "pin": {
-            "lat": 40.758,
-            "lon": -73.9855,
-            "place": "New York, United States"
-         },
-         "region": "N. AMERICA",
-         "scene": "parade",
-         "stats": [
-            {
-               "label": "Winds forecast",
-               "value": "12-25 mph"
-            },
-            {
-               "label": "New date",
-               "value": "Saturday"
-            }
-         ],
-         "summary": [
-            "The Macy's parade was delayed to Saturday over high winds, a first."
-         ],
-         "tier": "grid",
-         "urls": [
-            "https://www.bbc.co.uk/news/articles/cwkgr38l2g9yo?at_medium=RSS&at_campaign=rss",
-            "https://www.theguardian.com/us-news/2026/nov/25/macys-thanksgiving-day-parade-postponed-weather"
-         ],
-         "utc_hour": "14:00",
-         "watch_next": "Whether Saturday's weather holds and how the crowds cope with the new date."
-      },
-      {
-         "certainty": "CONFIRMED",
-         "context": "Garments are Bangladesh's biggest export earner, so a wage decision there is national economic news, not just a labour story.",
-         "desk_note": "Two wires carry the 36 percent figure; the desk notes the union objection in the summary rather than hiding it.",
-         "facts": [
-            "The government raised the minimum monthly wage for entry-level garment workers by 36 percent.",
-            "The decision followed weeks of protests by garment workers.",
-            "Worker groups said the new rate still fell short of their demands, and fresh protests broke out."
-         ],
-         "headline": "Garment pay rises 36% after weeks of protests",
-         "number": 7,
-         "outlets": [
-            "AP",
-            "Reuters"
-         ],
-         "panel": "DHAKA",
-         "pin": {
-            "lat": 23.8103,
-            "lon": 90.4125,
-            "place": "Dhaka, Bangladesh"
-         },
-         "region": "ASIA",
-         "scene": "factory",
-         "stats": [
-            {
-               "label": "Wage rise",
-               "value": "+36%"
-            }
-         ],
-         "summary": [
-            "Bangladesh raised garment pay 36% after weeks of street protests."
-         ],
-         "tier": "grid",
-         "urls": [
-            "https://news.google.com/rss/articles/CBMilwFBVV95cUxQeG1YZnFJZHdHdHJvOEVqWEtMaG9jalF4REswUkl4SEYtVHJXNDQ5STNRMGRxVVhUTFZzNjhEOGZ4ZjhmUXpaQTFwN0dMQkZtV0NENXB5WFQ3bHEwVHU4Q19YUzRwTmZjUXJfcnAyOUxOZFpfa2xFYU4tZXN3Y2xlQVUtTGtGN2FPbm5BajROd2xBempqbUNz?oc=5"
-         ],
-         "utc_hour": "10:00",
-         "watch_next": "Whether the fresh protests spread and whether factory owners accept the new rate."
-      },
-      {
-         "certainty": "OFFICIAL",
-         "context": "The move rebuilds tariff leverage after the Supreme Court struck down broad emergency duties in February, and it landed the same day markets sold off.",
-         "desk_note": "An official announcement, so the label is OFFICIAL; the desk stresses the rates are proposed, not in force, because several early reports blurred that line.",
-         "facts": [
-            "The Office of the United States Trade Representative announced proposed tariffs on 14 economies on 25 November.",
-            "The 14 are Bangladesh, Cambodia, China, the European Union, India, Indonesia, Japan, Korea, Malaysia, Singapore, Switzerland, Taiwan, Thailand and Vietnam.",
-            "Proposed caps include 15 percent for the EU, Japan, Korea, Switzerland and Taiwan, 18 percent for Cambodia, Indonesia, Malaysia, Thailand and Bangladesh, and 20 percent for China.",
-            "Higher fallback rates apply if commitments are judged unsatisfactory, up to 40 percent for China and 25 percent for Taiwan and India.",
-            "Nothing takes effect yet: comments are due 5 January 2027 and a hearing is set for 25 January 2027."
-         ],
-         "headline": "Washington floats new tariffs on 14 economies",
-         "number": 8,
-         "outlets": [
-            "USTR",
-            "Reuters",
-            "TBS News",
-            "Investors.com",
-            "JD Supra",
-            "LexBlog"
-         ],
-         "panel": "TARIFFS",
-         "pin": {
-            "lat": 25.033,
-            "lon": 121.5654,
-            "place": "Taipei, Taiwan"
-         },
-         "region": "ASIA",
-         "scene": "tariff",
-         "stats": [
-            {
-               "label": "Economies targeted",
-               "value": "14"
-            },
-            {
-               "label": "Taiwan cap",
-               "value": "15%"
-            },
-            {
-               "label": "China cap",
-               "value": "20%"
-            }
-         ],
-         "summary": [
-            "Washington proposed duties on 14 economies over excess capacity."
-         ],
-         "tier": "grid",
-         "urls": [
-            "https://www.jdsupra.com/legalnews/ustr-announces-proposed-section-301-9713300/",
-            "https://www.lexblog.com/2026/11/25/ustr-proposes-new-section-301-tariffs-on-14-economies-over-structural-excess-capacity/",
-            "https://www.tbsnews.net/world/trump-proposes-new-tariffs-14-trading-partners-1614031"
-         ],
-         "utc_hour": "19:00",
-         "watch_next": "The January comment deadline and hearing, and whether Beijing and Taipei strike deals that hold the caps down."
-      },
-      {
-         "certainty": "CONFIRMED",
-         "context": "Nvidia sits at the centre of the AI trade, so a governance warning about its chief moves both the stock and the wider market mood.",
-         "desk_note": "The Reuters wire is the spine; the boardroom timeline comes from the company's own filings as reported by several outlets.",
-         "facts": [
-            "S and P Global Ratings placed Nvidia's AA rating on CreditWatch with negative implications on 25 November.",
-            "The agency said the departure and reinstatement of chief executive Jensen Huang did not answer its questions on board oversight.",
-            "Any cut is expected to be limited to one notch, to AA-, within 90 days.",
-            "Huang resigned on 11 November and was reinstated on 22 November after the board first ruled out his return.",
-            "Moody's kept its Aa1 rating on 18 November but cut the outlook to stable from positive.",
-            "US officials told Congress there was no Chinese involvement in Huang's personal affairs, the Wall Street Journal reported."
-         ],
-         "headline": "S&P puts Nvidia's AA rating on watch",
-         "number": 9,
-         "outlets": [
-            "Reuters",
-            "Bloomberg",
-            "Stocktwits",
-            "The Apex Wire"
-         ],
-         "panel": "NVIDIA",
-         "pin": {
-            "lat": 37.3541,
-            "lon": -121.9552,
-            "place": "Santa Clara, United States"
-         },
-         "region": "N. AMERICA",
-         "scene": "chip",
-         "stats": [
-            {
-               "label": "Rating",
-               "value": "AA"
-            },
-            {
-               "label": "Likely cut",
-               "value": "1 notch"
-            },
-            {
-               "label": "Review",
-               "value": "90 days"
-            }
-         ],
-         "summary": [
-            "S&P put Nvidia's AA rating on watch over governance risks."
-         ],
-         "tier": "grid",
-         "urls": [
-            "https://www.reuters.com/business/sp-global-places-nvidia-rating-creditwatch-negative-rising-management-governance-2026-11-25/",
-            "https://stocktwits.com/news-articles/markets/equity/nvidia-may-get-a-credit-rating-cut-amid-governance-issues-while-us-officials-reportedly-say-no-chinese-interference-in-huang-s-affair/cNbHubZR9mx"
-         ],
-         "utc_hour": "18:56",
-         "watch_next": "The December 1 closed-door House interview and December 3 public Senate hearing for Huang, and the S and P review."
-      },
-      {
-         "certainty": "CONFIRMED",
-         "context": "The Wednesday night ties decided who holds the top eight places with three rounds left in the league phase.",
-         "desk_note": "UEFA's own round-up and the wire agree on every score; the desk splits the night into two stories so neither half gets squeezed.",
-         "facts": [
-            "Liverpool won 3-0 away at Club Brugge, with Alexander Isak scoring twice.",
-            "Barcelona won 4-1 away at Sabah, the Azerbaijani debutants, with three goals in under ten minutes after the break.",
-            "Both winners moved into fourth and fifth in the league phase table."
-         ],
-         "headline": "Liverpool and Barcelona cruise in Europe",
-         "number": 10,
-         "outlets": [
-            "UEFA",
-            "AP",
-            "Sportradar"
-         ],
-         "panel": "UCL NIGHT",
-         "pin": {
-            "lat": 51.2093,
-            "lon": 3.2247,
-            "place": "Bruges, Belgium"
-         },
-         "region": "EUROPE",
-         "scene": "stadium",
-         "stats": [
-            {
-               "label": "Liverpool at Brugge",
-               "value": "3-0"
-            },
-            {
-               "label": "Barcelona at Sabah",
-               "value": "4-1"
-            }
-         ],
-         "summary": [
-            "Liverpool won 3-0 at Club Brugge on two goals from Alexander Isak."
-         ],
-         "tier": "grid",
-         "urls": [
-            "https://www.uefa.com/uefachampionsleague/news/02ab-22288f99d39c-d5631dd311d0-1000--champions-league-round-up-liverpool-and-barca-win-well-rom/",
-            "https://www.lapost.com/content/paris-saint-germain-and-bayern-munich-without-star-players-in-the-champions-league"
-         ],
-         "utc_hour": "21:55",
-         "watch_next": "Matchday six in two weeks, the last round of the year."
-      },
-      {
-         "certainty": "CONFIRMED",
-         "context": "Paris had won every league phase game until Roma arrived; Madrid now stand alone with a perfect record.",
-         "desk_note": "The second half of the Wednesday night, kept separate so the two shocks each get their own panel.",
-         "facts": [
-            "Paris Saint-Germain drew 2-2 at home with Roma, dropping points for the first time in the league phase.",
-            "Lille beat Bayern Munich 2-1, with the German side missing the injured Harry Kane.",
-            "Sporting CP and Manchester United also drew 2-2 in Lisbon.",
-            "Inter beat Stuttgart 2-0 and Atletico Madrid beat Viking 2-0."
-         ],
-         "headline": "PSG's perfect run ends as Bayern are beaten",
-         "number": 11,
-         "outlets": [
-            "UEFA",
-            "AP",
-            "Sportradar"
-         ],
-         "panel": "PARIS",
-         "pin": {
-            "lat": 48.8566,
-            "lon": 2.3522,
-            "place": "Paris, France"
-         },
-         "region": "EUROPE",
-         "scene": "stadium",
-         "stats": [
-            {
-               "label": "PSG v Roma",
-               "value": "2-2"
-            },
-            {
-               "label": "Lille v Bayern",
-               "value": "2-1"
-            }
-         ],
-         "summary": [
-            "PSG's perfect run ended in a 2-2 home draw with Roma."
-         ],
-         "tier": "grid",
-         "urls": [
-            "https://www.uefa.com/uefachampionsleague/news/02ab-22288f99d39c-d5631dd311d0-1000--champions-league-round-up-liverpool-and-barca-win-well-rom/"
-         ],
-         "utc_hour": "21:55",
-         "watch_next": "Whether Madrid keep the only perfect record through matchday six."
-      },
-      {
-         "certainty": "CONFIRMED",
-         "context": "The Solomons sit on the sea route between the United States and Australia, which is why a security pact there carries weight far beyond the islands.",
-         "desk_note": "Signed in Canberra on Wednesday and carried by Reuters, CNN and AP within hours; the China angle is the story, so it leads the summary.",
-         "facts": [
-            "Australia and Solomon Islands signed a security treaty in Canberra on Wednesday.",
-            "The treaty names Australia the islands' primary security partner and says no foreign military or security base will stand on their soil.",
-            "Australia will spend 740 million dollars over a decade, mostly grants, on policing, infrastructure, education and sport.",
-            "Australian media reported the islands' 2022 security pact with China will not be renewed; Prime Minister Matthew Wale would not confirm it, citing a non-disclosure clause.",
-            "The treaty needs ratification by both parliaments before it takes effect."
-         ],
-         "headline": "Solomons pick Australia as top security partner",
-         "number": 12,
-         "outlets": [
-            "Reuters",
-            "CNN",
-            "AP",
-            "Lowy Institute",
-            "The Times"
-         ],
-         "panel": "HONIARA",
-         "pin": {
-            "lat": -9.433,
-            "lon": 159.958,
-            "place": "Honiara, Solomon Islands"
-         },
-         "region": "OCEANIA",
-         "scene": "treaty",
-         "stats": [
-            {
-               "label": "Australian funding",
-               "value": "$740m"
-            },
-            {
-               "label": "China pact year",
-               "value": "2022"
-            }
-         ],
-         "summary": [
-            "Solomons signed a security treaty naming Australia its top partner."
-         ],
-         "tier": "grid",
-         "urls": [
-            "https://www.cnn.com/2026/11/24/australia/solomon-islands-australia-security-pact-intl-hnk?cid=external-feeds_iluminar_meta",
-            "https://www.lowyinstitute.org/the-interpreter/power-influence-and-the-australia-solomon-islands-treaty"
-         ],
-         "utc_hour": "02:00",
-         "watch_next": "Ratification in both parliaments and Beijing's formal response."
-      },
-      {
-         "certainty": "REPORTED",
-         "context": "China's station has flown only Chinese crews until now, so a foreign astronaut aboard is a first for the programme.",
-         "desk_note": "Three Indian aggregators carry it and agree on the name and the mission; the desk labels it REPORTED rather than CONFIRMED because no wire copy was in hand.",
-         "facts": [
-            "Muhammad Zeeshan Ali of Pakistan will fly on China's Shenzhou-24 mission to the Tiangong station.",
-            "He is the first foreign astronaut to travel to the Chinese station.",
-            "The announcement was reported across Indian outlets on 26 November."
-         ],
-         "headline": "Pakistan's first astronaut heads for China's station",
-         "number": 13,
-         "outlets": [
-            "SelfStudys",
-            "Observer Voice",
-            "StudMentor"
-         ],
-         "panel": "TIANGONG",
-         "pin": {
-            "lat": 39.9042,
-            "lon": 116.4074,
-            "place": "Beijing, China"
-         },
-         "region": "ASIA",
-         "scene": "rocket",
-         "stats": [
-            {
-               "label": "Mission",
-               "value": "Shenzhou-24"
-            }
-         ],
-         "summary": [
-            "Zeeshan Ali will be the first foreign astronaut aboard Tiangong."
-         ],
-         "tier": "grid",
-         "urls": [
-            "https://www.selfstudys.com/update/school-assembly-news-headlines-today-26-november-2026-constitution-day-sheikh-hasina-vaibhav-sooryavanshi-and-other-top-updates",
-            "https://observervoice.com/todays-school-assembly-news-headlines-26-november-2026-255264/"
-         ],
-         "utc_hour": "03:00",
-         "watch_next": "The launch date and the crew's experiments aboard Tiangong."
-      },
-      {
-         "certainty": "CONFIRMED",
-         "context": "The fall wiped out the previous day's record rally, which had followed Jensen Huang's return as Nvidia chief.",
-         "desk_note": "The figures are consistent across Taiwanese and international outlets; the desk uses the exchange's own closing numbers.",
-         "facts": [
-            "The Taiex closed down 1,926.92 points, or 4.8 percent, at 38,195.43.",
-            "It was the sixth-largest single-day points fall on record, after an intraday drop of 3,440.45.",
-            "The New Taiwan dollar closed at 33.126 per US dollar, its lowest in nearly 20 months.",
-            "Foreign investors sold a net 123.654 billion Taiwan dollars of shares in a day.",
-            "The Philadelphia Semiconductor Index fell 7.88 percent overnight."
-         ],
-         "headline": "Taiwan market sheds 1,927 points in a day",
-         "number": 14,
-         "outlets": [
-            "BigGo Finance",
-            "SimpleLife News",
-            "Finwire",
-            "Central News Agency"
-         ],
-         "panel": "TAIPEI",
-         "pin": {
-            "lat": 25.033,
-            "lon": 121.5654,
-            "place": "Taipei, Taiwan"
-         },
-         "region": "ASIA",
-         "scene": "market",
-         "stats": [
-            {
-               "label": "Taiex fall",
-               "value": "-1,927 pts"
-            },
-            {
-               "label": "NT dollar",
-               "value": "33.126"
-            }
-         ],
-         "summary": [
-            "Taiwan's market fell 1,927 points in a day, erasing the record rally of the day before.",
-            "The currency slid past 33 to the dollar as foreign investors sold heavily."
-         ],
-         "tier": "brief",
-         "urls": [
-            "https://finance.biggo.com/news/d42446c9-e696-4eb3-83a3-84dbd807497c",
-            "https://simplelife.news/regions/tw/en/latest.html"
-         ],
-         "utc_hour": "05:30",
-         "watch_next": "The October PCE data and the Section 301 findings, both flagged as the next catalysts."
-      },
-      {
-         "certainty": "OFFICIAL",
-         "context": "The survey lands two weeks before the rate decision and alongside inflation data that points the same way.",
-         "desk_note": "An official Fed publication, so the label is OFFICIAL; the desk pairs it with the same-day GDP and PCE releases.",
-         "facts": [
-            "Eight of the twelve Federal Reserve districts reported slight to moderate growth, and four reported no change.",
-            "Employment edged up and wages and benefits rose moderately, faster than in the previous survey.",
-            "Prices increased moderately overall, and firms expect costs and prices to keep rising.",
-            "The personal consumption expenditures index rose 3.8 percent over the year in October.",
-            "Third-quarter GDP was revised up to 4.3 percent annualised, the fastest in three years."
-         ],
-         "headline": "Fed survey: growth holds as pay pressure builds",
-         "number": 15,
-         "outlets": [
-            "Bloomberg Law",
-            "Morningstar",
-            "TradingView",
-            "InvestingLive"
-         ],
-         "panel": "FED",
-         "pin": {
-            "lat": 38.8977,
-            "lon": -77.0365,
-            "place": "Washington, United States"
-         },
-         "region": "N. AMERICA",
-         "scene": "market",
-         "stats": [
-            {
-               "label": "Districts growing",
-               "value": "8 of 12"
-            },
-            {
-               "label": "PCE inflation",
-               "value": "3.8%"
-            },
-            {
-               "label": "Q3 GDP",
-               "value": "4.3%"
-            }
-         ],
-         "summary": [
-            "The Federal Reserve's Beige Book found growth in eight of twelve districts, with wage pressure picking up.",
-            "Inflation stayed sticky at 3.8 percent while GDP was revised up to 4.3 percent."
-         ],
-         "tier": "brief",
-         "urls": [
-            "https://news.bloomberglaw.com/banking-law/fed-beige-book-shows-moderate-growth-uptick-in-wage-pressures",
-            "https://www.morningstar.com/news/dow-jones/202611256746/fed-contacts-expect-costs-and-prices-to-keep-rising-beige-book"
-         ],
-         "utc_hour": "20:18",
-         "watch_next": "The December 8-9 rate meeting, where markets price a hike as near certain."
-      },
-      {
-         "certainty": "CONFIRMED",
-         "context": "The jets themselves arrived on 15 November; Wednesday was the first time the Air Force showed them to reporters at the base.",
-         "desk_note": "The desk frames the story on the 25 November display, not the 15 November arrival, and says so in the summary to keep the date honest.",
-         "facts": [
-            "The Air Force showed its F-15EX Eagle II fighters to reporters at Kadena Air Base on Wednesday.",
-            "It is the type's first permanent posting outside the United States.",
-            "Two jets, the 22nd and 23rd built, arrived on 15 November.",
-            "The Air Force plans 36 of the jets in Japan across two squadrons, replacing ageing F-15C and D aircraft."
-         ],
-         "headline": "New US fighter jet shown off in Okinawa",
-         "number": 16,
-         "outlets": [
-            "Particle News",
-            "Kyodo News",
-            "Developments Today",
-            "Boeing"
-         ],
-         "panel": "KADENA",
-         "pin": {
-            "lat": 26.3556,
-            "lon": 127.768,
-            "place": "Kadena, Okinawa, Japan"
-         },
-         "region": "ASIA",
-         "scene": "rocket",
-         "stats": [
-            {
-               "label": "Jets in Japan",
-               "value": "2"
-            },
-            {
-               "label": "Planned total",
-               "value": "36"
-            }
-         ],
-         "summary": [
-            "The US Air Force showed off its new F-15EX fighters at Kadena in Okinawa, the type's first posting abroad.",
-            "Two jets have arrived so far, with 36 planned for the base."
-         ],
-         "tier": "brief",
-         "urls": [
-            "http://particle.news/story/us-air-force-displays-f15ex-at-kadena-in-first-overseas-deployment",
-            "https://www.gate.tr/en/news/detail/us-military-begins-deploying-f-15ex-fighter-jets-at-okinawa-base-on-52850"
-         ],
-         "utc_hour": "01:00",
-         "watch_next": "The next deliveries and the retirement pace of the old F-15C and D fleet."
-      },
-      {
-         "certainty": "CLAIM",
-         "context": "The strait carries a large share of the world's seaborne oil, and traffic through it has already fallen by about half since the war began.",
-         "desk_note": "An Iranian claim carried by its state agency and an energy wire; unverified by independent shipping monitors, so the label stays CLAIM.",
-         "facts": [
-            "The Revolutionary Guard navy said two oil tankers exploded early on Wednesday after hitting naval mines in the Strait of Hormuz.",
-            "The vessels were on a route Iran says was not authorised, according to the statement carried by IRNA.",
-            "The claims have not been independently verified, and the joint maritime centre said such claims were unconfirmed.",
-            "Three other tankers were reported hit earlier in the week under similar claims."
-         ],
-         "headline": "Tehran says two more tankers hit mines",
-         "number": 17,
-         "outlets": [
-            "OilPrice",
-            "IRNA",
-            "DefenceMENA",
-            "Hellenic Shipping News"
-         ],
-         "panel": "HORMUZ",
-         "pin": {
-            "lat": 26.5667,
-            "lon": 56.25,
-            "place": "Strait of Hormuz"
-         },
-         "region": "MIDDLE EAST",
-         "scene": "refinery",
-         "stats": [
-            {
-               "label": "Tankers claimed hit",
-               "value": "2"
-            }
-         ],
-         "summary": [
-            "Iran said two more oil tankers struck naval mines in the Strait of Hormuz early on Wednesday.",
-            "The claim is unverified, and shipping monitors have not confirmed the incidents."
-         ],
-         "tier": "brief",
-         "urls": [
-            "https://oilprice.com/Latest-Energy-News/World-News/Iran-Reports-Fresh-Tanker-Explosions-as-Hormuz-Attacks-Intensify.html",
-            "https://defencemena.com/irgc-says-three-oil-tankers-hit-mines-hormuz/"
-         ],
-         "utc_hour": "03:00",
-         "watch_next": "Whether any owner, flag state or maritime monitor confirms a vessel, and where Brent goes next."
-      },
-      {
-         "certainty": "REPORTED",
-         "context": "The refinery campaign had paused in mid-October and has picked up sharply since the end of last month.",
-         "desk_note": "Reuters is the spine via the hourly wire; the refinery names rest on monitoring channels and satellite fire data, so the label is REPORTED.",
-         "facts": [
-            "Ukrainian drones struck the Syzran and Kuibyshev refineries in Samara region overnight, with fires at both.",
-            "A third plant in Rostov region was also reported hit, along with the Savasleyka airbase.",
-            "One person was killed in Samara, the regional governor said.",
-            "President Vladimir Putin said on 24 November that retaliation was inevitable, saying Kyiv ignored a US request to stop hitting refineries.",
-            "Russian refinery runs have fallen about 45 percent since late October, according to analysts.",
-            "Russian drones killed seven people across six Ukrainian regions the same night."
-         ],
-         "headline": "Kyiv's drones set two Russian refineries ablaze",
-         "number": 18,
-         "outlets": [
-            "Reuters",
-            "Europa Journal News",
-            "Zot News",
-            "The Hourly News"
-         ],
-         "panel": "SAMARA",
-         "pin": {
-            "lat": 53.1959,
-            "lon": 50.1002,
-            "place": "Samara, Russia"
-         },
-         "region": "EUROPE",
-         "scene": "fire",
-         "stats": [
-            {
-               "label": "Refineries hit",
-               "value": "2"
-            },
-            {
-               "label": "Refining fall",
-               "value": "-45%"
-            }
-         ],
-         "summary": [
-            "Ukrainian drones set fire to two Rosneft refineries deep inside Russia overnight, killing one person.",
-            "Putin warned retaliation was inevitable as Russian refinery output fell about 45 percent."
-         ],
-         "tier": "brief",
-         "urls": [
-            "https://europajournalnews.com/footage-shows-two-rosneft-refineries-on-fire-hours-after-putin-called-retaliation-inevitable/",
-            "https://thehourlynews.com/ukrainian-drones-strike-two-rosneft-refineries-deep-inside-russia-killing-one/"
-         ],
-         "utc_hour": "02:00",
-         "watch_next": "What form the promised Russian retaliation takes, and against which targets."
-      },
-      {
-         "certainty": "REPORTED",
-         "context": "Moscow has rarely published its own losses, so a figure from its own count carries weight even as a report.",
-         "desk_note": "Two European outlets carry the figure; the desk labels it REPORTED because the underlying Russian publication was not in hand.",
-         "facts": [
-            "Russian figures cited in reports put the country's losses in the Ukraine war at nearly 500,000 people.",
-            "The figure circulated in European coverage on 26 November."
-         ],
-         "headline": "Moscow's own count puts war dead near 500,000",
-         "number": 19,
-         "outlets": [
-            "Jagran Josh",
-            "EUR Radio"
-         ],
-         "panel": "KYIV",
-         "pin": {
-            "lat": 50.4501,
-            "lon": 30.5234,
-            "place": "Kyiv, Ukraine"
-         },
-         "region": "EUROPE",
-         "scene": "strike",
-         "stats": [
-            {
-               "label": "War dead, own figures",
-               "value": "~500,000"
-            }
-         ],
-         "summary": [
-            "Russia's own figures show it has lost nearly 500,000 people in the war in Ukraine.",
-            "The count circulated in European coverage on Thursday."
-         ],
-         "tier": "brief",
-         "urls": [
-            "https://www.jagranjosh.com/news/school-assembly-news-headlines-november-26-2026-top-national-world-education-business-news-189203",
-            "https://eurradio.com/eur-news-episode/eur-radio-news-2026-11-26-0117/"
-         ],
-         "utc_hour": "08:00",
-         "watch_next": "Whether Moscow publishes the underlying breakdown and how Kyiv answers the figure."
-      },
-      {
-         "certainty": "CONFIRMED",
-         "context": "The Swiss office had only reopened in October, after being shut during the pandemic, so the closure ends a five-week comeback.",
-         "desk_note": "Yonhap is the spine, with five more outlets in agreement on the names, the 48 hours and the camp at the centre of the row.",
-         "facts": [
-            "North Korea ordered Switzerland to shut its diplomatic office in Pyongyang on Wednesday.",
-            "The office head, Sylvain Astier, was declared persona non grata and told to leave within 48 hours.",
-            "The row follows Swiss sanctions on the Songdowon International Children's Camp, accused of involvement in moving Ukrainian children from Russian-held territory.",
-            "Kim Yo Jong, sister of the North's leader, had threatened the closure a day earlier.",
-            "The office reopened in October when Swiss foreign minister Ignazio Cassis visited Pyongyang."
-         ],
-         "headline": "North Korea throws Swiss envoy out",
-         "number": 20,
-         "outlets": [
-            "Yonhap",
-            "TBS News",
-            "Sowetan",
-            "AJP",
-            "The AZB"
-         ],
-         "panel": "PYONGYANG",
-         "pin": {
-            "lat": 39.0392,
-            "lon": 125.7625,
-            "place": "Pyongyang, North Korea"
-         },
-         "region": "ASIA",
-         "scene": "treaty",
-         "stats": [
-            {
-               "label": "Hours to leave",
-               "value": "48"
-            }
-         ],
-         "summary": [
-            "North Korea ordered Switzerland's Pyongyang office shut and its head out within 48 hours.",
-            "The row follows Swiss sanctions on a youth camp accused of involvement in moving Ukrainian children."
-         ],
-         "tier": "brief",
-         "urls": [
-            "https://www.tbsnews.net/worldbiz/asia/north-korea-orders-swiss-diplomatic-office-closed-diplomat-leave-within-48-hours",
-            "https://www.byteseu.com/2545160/"
-         ],
-         "utc_hour": "07:00",
-         "watch_next": "Whether Bern keeps relations running through Beijing and whether Pyongyang widens the row."
-      },
-      {
-         "certainty": "CONFIRMED",
-         "context": "26 November is both Constitution Day and the anniversary of the 2008 attacks, so the day carries two national markers at once.",
-         "desk_note": "Three Indian outlets agree on both markers; the desk pairs them in one brief rather than splitting a thin story.",
-         "facts": [
-            "India observed Constitution Day on 26 November, 77 years after the constitution was adopted in 1949.",
-            "The same day marked 18 years since the Mumbai attacks of 26 November 2008, in which more than 160 people died."
-         ],
-         "headline": "India marks Constitution Day and 26/11 anniversary",
-         "number": 21,
-         "outlets": [
-            "SelfStudys",
-            "Observer Voice",
-            "Jagran Josh"
-         ],
-         "panel": "MUMBAI",
-         "pin": {
-            "lat": 19.076,
-            "lon": 72.8777,
-            "place": "Mumbai, India"
-         },
-         "region": "ASIA",
-         "scene": "treaty",
-         "stats": [
-            {
-               "label": "Years since constitution",
-               "value": "77"
-            },
-            {
-               "label": "Years since 26/11",
-               "value": "18"
-            }
-         ],
-         "summary": [
-            "India marked Constitution Day, 77 years since its constitution was adopted.",
-            "The day also marked 18 years since the Mumbai attacks that killed more than 160 people."
-         ],
-         "tier": "brief",
-         "urls": [
-            "https://www.selfstudys.com/update/school-assembly-news-headlines-today-26-november-2026-constitution-day-sheikh-hasina-vaibhav-sooryavanshi-and-other-top-updates",
-            "https://observervoice.com/todays-school-assembly-news-headlines-26-november-2026-255264/"
-         ],
-         "utc_hour": "05:00",
-         "watch_next": "The official commemorations in Delhi and Mumbai through the day."
-      },
-      {
-         "certainty": "OFFICIAL",
-         "context": "Nepal's new prime minister met Modi in Delhi, and the package is the first big deliverable of the visit.",
-         "desk_note": "Two Indian outlets carry the figure and the meeting; the label is OFFICIAL because it rests on the government announcement.",
-         "facts": [
-            "India announced development assistance worth 15,000 crore rupees for Nepal.",
-            "The announcement followed talks between Prime Minister Narendra Modi and Nepal's Prime Minister Balendra Shah.",
-            "The package covers development and connectivity."
-         ],
-         "headline": "India offers Nepal a ₹15,000-crore package",
-         "number": 22,
-         "outlets": [
-            "SelfStudys",
-            "StudMentor"
-         ],
-         "panel": "KATHMANDU",
-         "pin": {
-            "lat": 27.7172,
-            "lon": 85.324,
-            "place": "Kathmandu, Nepal"
-         },
-         "region": "ASIA",
-         "scene": "treaty",
-         "stats": [
-            {
-               "label": "Package",
-               "value": "₹15,000 cr"
-            }
-         ],
-         "summary": [
-            "India announced a 15,000-crore-rupee development package for Nepal after talks in Delhi.",
-            "Prime Minister Modi met Nepal's Prime Minister Balendra Shah for the announcement."
-         ],
-         "tier": "brief",
-         "urls": [
-            "https://www.selfstudys.com/update/school-assembly-news-headlines-today-26-november-2026-constitution-day-sheikh-hasina-vaibhav-sooryavanshi-and-other-top-updates",
-            "https://studmentor.in/news-headlines-for-school-assembly-26-november-2026/"
-         ],
-         "utc_hour": "12:00",
-         "watch_next": "Which projects the package funds first and when the money starts flowing."
-      },
-      {
-         "certainty": "OFFICIAL",
-         "context": "The new seats target the technologies Delhi wants its engineers to lead in, and they start from 2027.",
-         "desk_note": "Three outlets agree on the number and the fields; the desk keeps it short because the announcement is thin on detail.",
-         "facts": [
-            "India's technology institutes will add 6,000 seats in robotics, artificial intelligence and space technology.",
-            "The new seats start from 2027."
-         ],
-         "headline": "IITs to add 6,000 tech seats",
-         "number": 23,
-         "outlets": [
-            "SelfStudys",
-            "Observer Voice",
-            "StudMentor"
-         ],
-         "panel": "DELHI",
-         "pin": {
-            "lat": 28.6139,
-            "lon": 77.209,
-            "place": "New Delhi, India"
-         },
-         "region": "ASIA",
-         "scene": "chip",
-         "stats": [
-            {
-               "label": "New seats",
-               "value": "6,000"
-            }
-         ],
-         "summary": [
-            "India's IITs will add 6,000 seats in robotics, AI and space technology from 2027.",
-            "The expansion was announced in Delhi on Thursday."
-         ],
-         "tier": "brief",
-         "urls": [
-            "https://www.selfstudys.com/update/school-assembly-news-headlines-today-26-november-2026-constitution-day-sheikh-hasina-vaibhav-sooryavanshi-and-other-top-updates",
-            "https://observervoice.com/todays-school-assembly-news-headlines-26-november-2026-255264/"
-         ],
-         "utc_hour": "11:00",
-         "watch_next": "Which institutes get the seats and how admissions change."
-      },
-      {
-         "certainty": "CONFIRMED",
-         "context": "The innings came for India A against the UAE in Doha, in a List A match, and it broke two records in one knock.",
-         "desk_note": "Three outlets agree on the runs, the balls and the age; the desk uses the match report figures, not the hype.",
-         "facts": [
-            "Vaibhav Sooryavanshi, 15, scored 204 runs off 53 balls for India A against the UAE.",
-            "It is the fastest double century in List A cricket, and he also set the fastest century off 28 balls.",
-            "The match was played in Doha."
-         ],
-         "headline": "Fifteen-year-old smashes record 204 off 53 balls",
-         "number": 24,
-         "outlets": [
-            "SelfStudys",
-            "Observer Voice",
-            "StudMentor"
-         ],
-         "panel": "DOHA",
-         "pin": {
-            "lat": 25.2854,
-            "lon": 51.531,
-            "place": "Doha, Qatar"
-         },
-         "region": "ASIA",
-         "scene": "stadium",
-         "stats": [
-            {
-               "label": "Runs",
-               "value": "204"
-            },
-            {
-               "label": "Balls",
-               "value": "53"
-            },
-            {
-               "label": "Age",
-               "value": "15"
-            }
-         ],
-         "summary": [
-            "Fifteen-year-old Vaibhav Sooryavanshi smashed 204 off 53 balls for India A against the UAE.",
-            "It is the fastest double century in List A cricket, with the fastest hundred off 28 balls."
-         ],
-         "tier": "brief",
-         "urls": [
-            "https://www.selfstudys.com/update/school-assembly-news-headlines-today-26-november-2026-constitution-day-sheikh-hasina-vaibhav-sooryavanshi-and-other-top-updates",
-            "https://observervoice.com/todays-school-assembly-news-headlines-26-november-2026-255264/"
-         ],
-         "utc_hour": "13:00",
-         "watch_next": "Whether the teenager keeps his place for the next India A fixture."
-      },
-      {
-         "certainty": "CONFIRMED",
-         "context": "The match is the youngest title contest in chess history: both players are 20.",
-         "desk_note": "The chess press agrees on the scores and the schedule; the desk frames the brief on game three, which is today's event.",
-         "facts": [
-            "Defending champion Gukesh Dommaraju and challenger Javokhir Sindarov drew the first two games in Geneva.",
-            "Game one lasted 38 moves and game two ended in 20 moves.",
-            "The score stands at 1-1, and game three is played on Thursday with Sindarov holding white.",
-            "The match runs to 14 classical games, with the first to seven and a half points taking the title."
-         ],
-         "headline": "Chess title match level at 1-1 as game three looms",
-         "number": 25,
-         "outlets": [
-            "Bogner Chess",
-            "The Week in Chess",
-            "World Chess"
-         ],
-         "panel": "GENEVA",
-         "pin": {
-            "lat": 46.2044,
-            "lon": 6.1432,
-            "place": "Geneva, Switzerland"
-         },
-         "region": "EUROPE",
-         "scene": "treaty",
-         "stats": [
-            {
-               "label": "Score",
-               "value": "1-1"
-            },
-            {
-               "label": "Games",
-               "value": "14"
-            }
-         ],
-         "summary": [
-            "Gukesh and Sindarov drew the first two games of the world title match in Geneva.",
-            "The score is level at 1-1, with game three played on Thursday."
-         ],
-         "tier": "brief",
-         "urls": [
-            "https://www.bognerchess.com/en/events/world-chess-championship-2026",
-            "https://theweekinchess.com/chessnews/events/world-chess-championship-2026"
-         ],
-         "utc_hour": "16:00",
-         "watch_next": "Game three on Thursday afternoon and whether either player breaks the deadlock."
-      },
-      {
-         "certainty": "OFFICIAL",
-         "context": "The register is the starting list; franchises now pick the names they want in the final auction pool.",
-         "desk_note": "The league's own media advisory is the spine, with three more outlets in agreement on every number.",
-         "facts": [
-            "A total of 1,220 players feature on the auction register for the IPL 2027 mini-auction.",
-            "The list holds 939 Indian players and 281 overseas players from 17 countries.",
-            "Ten franchises have 66 slots to fill, including 25 overseas places, and have already retained 184 players.",
-            "Ben Stokes headlines the register with a base price of two crore rupees.",
-            "The auction takes place on 16 December in Goa, and the final list comes out on 4 December."
-         ],
-         "headline": "1,220 players sign up for IPL auction",
-         "number": 26,
-         "outlets": [
-            "IPLT20",
-            "Wisden",
-            "CricTracker",
-            "Zee News"
-         ],
-         "panel": "GOA",
-         "pin": {
-            "lat": 15.2993,
-            "lon": 74.124,
-            "place": "Goa, India"
-         },
-         "region": "ASIA",
-         "scene": "stadium",
-         "stats": [
-            {
-               "label": "Players registered",
-               "value": "1,220"
-            },
-            {
-               "label": "Slots open",
-               "value": "66"
-            }
-         ],
-         "summary": [
-            "A total of 1,220 players registered for the IPL 2027 auction, chasing 66 open slots.",
-            "Ben Stokes headlines the list at a base price of two crore rupees; the auction is on 16 December in Goa."
-         ],
-         "tier": "brief",
-         "urls": [
-            "https://www.iplt20.com/news/article/1-220-players-feature-on-auction-register-for-tata-ipl-2027-player-auction",
-            "https://www.wisden.com/series/ipl-2027/cricket-news/ipl-2027-auction-two-japan-cricketers-in-1220-strong-initial-longlist"
-         ],
-         "utc_hour": "10:00",
-         "watch_next": "The final auction list on 4 December and the bidding in Goa."
-      },
-      {
-         "certainty": "CONFIRMED",
-         "context": "The exit lands as the Walmart-owned retailer weighs the timing of its long-awaited public listing.",
-         "desk_note": "TechCrunch, Reuters and Forbes India agree on the date, the interim chief and the silence on reasons; the desk keeps the reported Walmart friction as reported, not fact.",
-         "facts": [
-            "Flipkart chief executive Kalyan Krishnamurthy is stepping down after more than 11 years with the company.",
-            "His last day will be 4 December, and a successor will be named in the coming weeks.",
-            "Chief product and technology officer Balaji Thiagarajan will lead the company in the interim with the board.",
-            "Neither Flipkart nor Walmart gave an official reason for the exit.",
-            "Sources told several outlets that Walmart leadership had asked him to leave, amid uncertainty over the IPO."
-         ],
-         "headline": "Flipkart chief steps down after 11 years",
-         "number": 27,
-         "outlets": [
-            "TechCrunch",
-            "Reuters",
-            "Forbes India",
-            "Inc42",
-            "YourStory"
-         ],
-         "panel": "BENGALURU",
-         "pin": {
-            "lat": 12.9716,
-            "lon": 77.5946,
-            "place": "Bengaluru, India"
-         },
-         "region": "ASIA",
-         "scene": "market",
-         "stats": [
-            {
-               "label": "Years at Flipkart",
-               "value": "11+"
-            },
-            {
-               "label": "Last day",
-               "value": "4 Dec"
-            }
-         ],
-         "summary": [
-            "Flipkart chief Kalyan Krishnamurthy is stepping down after more than 11 years, with his last day on 4 December.",
-            "The product chief leads in the interim as the company weighs its IPO timing."
-         ],
-         "tier": "brief",
-         "urls": [
-            "https://techcrunch.com/2026/11/25/flipkart-ceo-kalyan-krishnamurthy-to-step-down-next-week-amid-ipo-uncertainty/",
-            "https://www.forbesindia.com/leadership/kalyan-krishnamurthy-steps-down-as-flipkart-ceo-after-11-years-article/3001024"
-         ],
-         "utc_hour": "09:00",
-         "watch_next": "Who the permanent successor is, and when the IPO timetable firms up."
-      },
-      {
-         "certainty": "CONFIRMED",
-         "context": "Taylor died on Monday, but the news only reached the public on Wednesday, which is why the story belongs to this edition.",
-         "desk_note": "Reuters, CNN, USA Today and AP agree on the day, the cause and the announcement; the desk dates the story to the announcement.",
-         "facts": [
-            "Andy Taylor, the original guitarist of Duran Duran, died at 65 on Monday, 23 November.",
-            "His family and former bandmates announced the death in a joint statement on Wednesday, 25 November.",
-            "He died peacefully at home after a long battle with metastatic prostate cancer, diagnosed in 2018.",
-            "Taylor co-wrote the band's biggest hits, including Rio, Hungry Like the Wolf and The Reflex.",
-            "He was inducted into the Rock and Roll Hall of Fame with the band in 2022."
-         ],
-         "headline": "Duran Duran guitarist Andy Taylor dies at 65",
-         "number": 28,
-         "outlets": [
-            "Reuters",
-            "CNN",
-            "USA Today",
-            "AP",
-            "People"
-         ],
-         "panel": "IBIZA",
-         "pin": {
-            "lat": 38.9806,
-            "lon": 1.4333,
-            "place": "Ibiza, Spain"
-         },
-         "region": "EUROPE",
-         "scene": "treaty",
-         "stats": [
-            {
-               "label": "Age",
-               "value": "65"
-            }
-         ],
-         "summary": [
-            "Duran Duran guitarist Andy Taylor died at 65 after a long battle with prostate cancer.",
-            "His death on Monday was announced by his family and bandmates on Wednesday."
-         ],
-         "tier": "brief",
-         "urls": [
-            "https://www.reuters.com/lifestyle/duran-duran-guitarist-songwriter-andy-taylor-dies-65-2026-11-25/",
-            "https://www.cnn.com/2026/11/25/entertainment/andy-taylor-duran-duran-death?cid=external-feeds_iluminar_meta"
-         ],
-         "utc_hour": "22:33",
-         "watch_next": "Tributes from the band and funeral arrangements."
-      },
-      {
-         "certainty": "CONFIRMED",
-         "context": "The fight ran since 2022, when Pitt sued over the sale of Jolie's stake in the estate where they married.",
-         "desk_note": "Two outlets carry the joint statement; the desk keeps it short because both sides declined further comment.",
-         "facts": [
-            "Brad Pitt and Angelina Jolie settled their legal battle over the French winery Chateau Miraval.",
-            "The estate is the vineyard they bought in 2008 and where they married in 2014.",
-            "Pitt sued in 2022 after Jolie sold her stake, saying she broke an agreement not to sell.",
-            "Both sides said they settled out of court in the best interests of their family and would not comment further."
-         ],
-         "headline": "Jolie and Pitt settle winery fight",
-         "number": 29,
-         "outlets": [
-            "BBC",
-            "The Guardian"
-         ],
-         "panel": "MIRAVAL",
-         "pin": {
-            "lat": 43.5263,
-            "lon": 6.2107,
-            "place": "Provence, France"
-         },
-         "region": "EUROPE",
-         "scene": "treaty",
-         "stats": [
-            {
-               "label": "Years in dispute",
-               "value": "4"
-            }
-         ],
-         "summary": [
-            "Brad Pitt and Angelina Jolie settled their years-long legal fight over the French winery Chateau Miraval.",
-            "Both said the out-of-court deal served their family's best interests."
-         ],
-         "tier": "brief",
-         "urls": [
-            "https://www.bbc.co.uk/news/articles/cmvg2989wv74o?at_medium=RSS&at_campaign=rss",
-            "https://www.theguardian.com/film/2026/nov/25/brad-pitt-angelina-jolie-settle-french-winery-lawsuit"
-         ],
-         "utc_hour": "15:00",
-         "watch_next": "Whether the settlement terms ever surface, and what happens to the estate."
-      },
-      {
-         "certainty": "CONFIRMED",
-         "context": "The arrest came on 6 November, but the charge itself is the day's news.",
-         "desk_note": "Two wires carry the charge; the desk does not repeat the detail of the material beyond what the charge states.",
-         "facts": [
-            "Thomas Markle was charged in the United States with possessing child sexual abuse images.",
-            "The FBI arrested him on 6 November after searching a storage unit he had rented in Los Angeles.",
-            "The search uncovered the abuse material, according to the reports."
-         ],
-         "headline": "Thomas Markle charged over abuse images",
-         "number": 30,
-         "outlets": [
-            "BBC",
-            "Reuters"
-         ],
-         "panel": "LOS ANGELES",
-         "pin": {
-            "lat": 34.0522,
-            "lon": -118.2437,
-            "place": "Los Angeles, United States"
-         },
-         "region": "N. AMERICA",
-         "scene": "siege",
-         "stats": [
-            {
-               "label": "Counts",
-               "value": "2"
-            }
-         ],
-         "summary": [
-            "Thomas Markle was charged in the US over possessing child sexual abuse images.",
-            "The FBI arrested him on 6 November after a search of a Los Angeles storage unit."
-         ],
-         "tier": "brief",
-         "urls": [
-            "https://www.bbc.co.uk/news/articles/crwy4egxn592o?at_medium=RSS&at_campaign=rss"
-         ],
-         "utc_hour": "17:00",
-         "watch_next": "The first court date and whether further charges follow."
-      },
-      {
-         "certainty": "OFFICIAL",
-         "context": "Hasina announced the date on Tuesday; Delhi's response on Wednesday is the new development, and it is what this brief reports.",
-         "desk_note": "The brief is built on the 25 November Indian response, not the 24 November announcement, and the summary says so.",
-         "facts": [
-            "India's foreign ministry said on Wednesday that Sheikh Hasina's plan to return voluntarily is separate from Dhaka's extradition request.",
-            "Hasina, ousted in August 2024, said she plans to return from exile in India on 16 December, Bangladesh's Victory Day.",
-            "Her spokesperson said the government should arrange her flight on the national carrier.",
-            "Dhaka says she can only return through extradition and faces a death sentence handed down in her absence.",
-            "A Bangladeshi minister said she would be arrested and jailed on return."
-         ],
-         "headline": "India: Hasina return plan separate from extradition",
-         "number": 31,
-         "outlets": [
-            "Reuters",
-            "TBS News",
-            "AP",
-            "The Hindu BusinessLine"
-         ],
-         "panel": "DHAKA",
-         "pin": {
-            "lat": 23.8103,
-            "lon": 90.4125,
-            "place": "Dhaka, Bangladesh"
-         },
-         "region": "ASIA",
-         "scene": "treaty",
-         "stats": [
-            {
-               "label": "Return date set",
-               "value": "16 Dec"
-            }
-         ],
-         "summary": [
-            "India said the exiled former prime minister's plan to return on 16 December is separate from Dhaka's extradition bid.",
-            "Dhaka insists she can only return in custody to face a death sentence."
-         ],
-         "tier": "brief",
-         "urls": [
-            "https://www.reuters.com/world/asia-pacific/india-says-hasinas-plan-return-bangladesh-separate-extradition-request-2026-11-25/",
-            "https://www.tbsnews.net/bangladesh/sheikh-hasina-seeks-return-bangladesh-16-december-state-carrier-1612171"
-         ],
-         "utc_hour": "12:00",
-         "watch_next": "Whether Delhi moves on the extradition request and whether Hasina boards a plane on 16 December."
-      },
-      {
-         "certainty": "CONFIRMED",
-         "context": "DART was the first test of shoving an asteroid off course; Hera is the inspection that shows what the shove actually did.",
-         "desk_note": "Reuters is the spine, with the space press in agreement on the crater, the tumbling and the boulders; the desk uses ESA's own numbers.",
-         "facts": [
-            "The European Space Agency unveiled the first close-up images of Dimorphos from its Hera spacecraft on 25 November.",
-            "One side of the moonlet is flattened by a stadium-sized crater from the 2022 DART impact.",
-            "The impact knocked Dimorphos into a chaotic tumble, out of its old locked spin.",
-            "Hundreds of boulders, some a metre across, orbit the Didymos and Dimorphos pair.",
-            "Dimorphos is 151 metres wide and orbits Didymos, 730 metres wide, about 193.5 million kilometres from Earth.",
-            "Hera will move closer next month and deploy two small CubeSats in January."
-         ],
-         "headline": "Hera shows asteroid smashed flat by DART",
-         "number": 32,
-         "outlets": [
-            "Reuters",
-            "IAC",
-            "Sky and Telescope",
-            "EarthSky"
-         ],
-         "panel": "DIMORPHOS",
-         "pin": {
-            "lat": 52.52,
-            "lon": 13.405,
-            "place": "Berlin, Germany"
-         },
-         "region": "EUROPE",
-         "scene": "rocket",
-         "stats": [
-            {
-               "label": "Moonlet width",
-               "value": "151 m"
-            },
-            {
-               "label": "Impact speed",
-               "value": "22,530 km/h"
-            }
-         ],
-         "summary": [
-            "ESA's Hera spacecraft revealed the first close-ups of Dimorphos, flattened by a stadium-sized crater.",
-            "The DART impact also left the moonlet tumbling chaotically, with hundreds of boulders orbiting nearby."
-         ],
-         "tier": "brief",
-         "urls": [
-            "https://www.reuters.com/science/new-images-reveal-crater-asteroid-struck-by-dart-spacecraft-2026-11-25/",
-            "https://www.iac.es/en/outreach/news/esas-hera-mission-reveals-first-images-asteroid-dimorphos-after-dart-impact"
-         ],
-         "utc_hour": "11:00",
-         "watch_next": "Hera's closer approach next month and the CubeSat deployment in January."
-      },
-      {
-         "certainty": "CONFIRMED",
-         "context": "The ruling does not ban cages by itself; it orders the Commission to say when it will act, after a promise made in 2021.",
-         "desk_note": "The court judgment is the spine, carried by several European outlets; the desk stresses the ruling orders a timetable, not a ban.",
-         "facts": [
-            "The EU General Court ruled on 25 November that the European Commission failed to meet its promise on the End the Cage Age initiative.",
-            "The citizens' initiative gathered nearly 1.4 million signatures in 2020.",
-            "The Commission promised in 2021 to propose a ban by the end of 2023, then never set a new date.",
-            "About 300 million farmed animals are still kept in cages across the EU.",
-            "The Commission is expected to present a proposal for laying hens on 9 December."
-         ],
-         "headline": "EU court: cage-ban promise must get a date",
-         "number": 33,
-         "outlets": [
-            "Rapporteur",
-            "Europe Says",
-            "Politico",
-            "EU Perspectives"
-         ],
-         "panel": "LUXEMBOURG",
-         "pin": {
-            "lat": 49.6116,
-            "lon": 6.1319,
-            "place": "Luxembourg"
-         },
-         "region": "EUROPE",
-         "scene": "treaty",
-         "stats": [
-            {
-               "label": "Signatures",
-               "value": "1.4m"
-            },
-            {
-               "label": "Animals caged",
-               "value": "300m"
-            }
-         ],
-         "summary": [
-            "An EU court ruled the Commission failed its promise to end cage farming and must now set a date.",
-            "The 2020 citizens' initiative drew 1.4 million signatures, yet 300 million animals remain caged."
-         ],
-         "tier": "brief",
-         "urls": [
-            "https://www.rapporteur.com/news/commission-failed-to-meet-cage-phase-out-promise-says-eu-top-court/",
-            "https://www.europesays.com/europe/190036/"
-         ],
-         "utc_hour": "11:36",
-         "watch_next": "The 9 December proposal for hens, and whether pigs and other animals get dates too."
-      },
-      {
-         "certainty": "REPORTED",
-         "context": "The warning lands in the same week Nvidia's boardroom chaos and a market rout put AI valuations on trial.",
-         "desk_note": "The Wall Street Journal is the spine, reprinted in The Times; the desk reports the economists' split, not a verdict.",
-         "facts": [
-            "Barclays estimates AI investment supplied 25 percent of US economic growth over the past year.",
-            "Data-centre construction added about half a percentage point to GDP growth, according to the bank.",
-            "Stocks now make up 35 percent of household net worth, against 26 percent at the dot-com peak.",
-            "Some economists say an AI bust could hurt more than the dot-com crash, which cut the Nasdaq by close to 80 percent.",
-            "Others argue the fallout would be smaller, since the economy is broader than the AI trade."
-         ],
-         "headline": "AI bust 'could outdo dot-com', economists warn",
-         "number": 34,
-         "outlets": [
-            "The Wall Street Journal",
-            "The Times",
-            "Atlas360"
-         ],
-         "panel": "AI BUST",
-         "pin": {
-            "lat": 38.8977,
-            "lon": -77.0365,
-            "place": "Washington, United States"
-         },
-         "region": "N. AMERICA",
-         "scene": "market",
-         "stats": [
-            {
-               "label": "AI share of growth",
-               "value": "25%"
-            },
-            {
-               "label": "Stocks of net worth",
-               "value": "35%"
-            }
-         ],
-         "summary": [
-            "Economists warned an AI bust could hurt more than the dot-com crash, after a week of wild market swings.",
-            "Barclays puts AI at a quarter of US growth, with stocks now a bigger share of household wealth than in 2000."
-         ],
-         "tier": "brief",
-         "urls": [
-            "https://www.wsj.com/economy/worse-than-the-dot-com-crash-what-an-ai-bust-could-mean-for-the-economy-2a0e5ab3",
-            "https://www.thetimes.com/business/wsj/article/worse-than-the-dot-com-crash-what-an-ai-bust-could-mean-for-the-economy-2hccblpfq"
-         ],
-         "utc_hour": "14:00",
-         "watch_next": "The October PCE data, the December Fed meeting, and whether AI stocks stabilise."
-      },
-      {
-         "certainty": "OFFICIAL",
-         "context": "The five decisions together are the cabinet's biggest infrastructure push of the season, and they were announced in one briefing.",
-         "desk_note": "ANI is the spine, with three more outlets in agreement on all three headline numbers; the label is OFFICIAL.",
-         "facts": [
-            "The Union Cabinet approved five projects and schemes worth 19,934 crore rupees on Wednesday.",
-            "The package includes an 11,000-crore scheme to build construction and infrastructure equipment manufacturing.",
-            "A second container terminal at Kamarajar Port in Tamil Nadu was cleared at 4,288.26 crore rupees, adding two million TEU a year.",
-            "A greenfield airport at Doloo in Silchar, Assam, was cleared at 2,014 crore rupees, with a terminal for 800 peak-hour passengers.",
-            "Two postal infrastructure schemes worth 2,632 crore rupees were also continued."
-         ],
-         "headline": "India cabinet clears ₹19,934-crore package",
-         "number": 35,
-         "outlets": [
-            "ANI",
-            "Particle News",
-            "Devdiscourse",
-            "Observer Voice"
-         ],
-         "panel": "NEW DELHI",
-         "pin": {
-            "lat": 28.6139,
-            "lon": 77.209,
-            "place": "New Delhi, India"
-         },
-         "region": "ASIA",
-         "scene": "factory",
-         "stats": [
-            {
-               "label": "Total package",
-               "value": "₹19,934 cr"
-            },
-            {
-               "label": "Port terminal",
-               "value": "₹4,288 cr"
-            },
-            {
-               "label": "Airport",
-               "value": "₹2,014 cr"
-            }
-         ],
-         "summary": [
-            "India's cabinet cleared a 19,934-crore-rupee package of manufacturing, port and airport projects.",
-            "The biggest items are a second terminal at Kamarajar Port and a new airport at Silchar."
-         ],
-         "tier": "brief",
-         "urls": [
-            "https://www.dailyprabhat.com/cabinet-approves-rs-4288-crore-second-container-terminal-at-kamarajar-port-rs-2014-crore-airport-in-assam/",
-            "http://particle.news/story/cabinet-approves-new-silchar-airport-and-second-container-terminal-at-kamarajar-port"
-         ],
-         "utc_hour": "13:00",
-         "watch_next": "The concession award for the port terminal and the start of work at Silchar."
-      },
-      {
-         "certainty": "REPORTED",
-         "context": "The actress died in August; the estate filing is the new development, and the desk reports it as such.",
-         "desk_note": "The death itself is August news and stays out of the headline; the filing is the story, carried by two US outlets.",
-         "facts": [
-            "Wladimir Klitschko, the late actress's former partner, filed in a Los Angeles court to have an administrator appointed over her estate.",
-            "The estate is worth at least 6.232 million dollars, including about 5.2 million in personal property.",
-            "Her daughter Kaya, 11, stands to inherit; she died without leaving a will.",
-            "Panettiere died on 16 August at 36, and the coroner ruled the death an accidental overdose involving fentanyl and other drugs.",
-            "South Carolina police closed their investigation after the coroner's ruling."
-         ],
-         "headline": "Klitschko seeks control of Panettiere's $6.2m estate",
-         "number": 36,
-         "outlets": [
-            "USA Today",
-            "Parade",
-            "TMZ"
-         ],
-         "panel": "LOS ANGELES",
-         "pin": {
-            "lat": 34.0522,
-            "lon": -118.2437,
-            "place": "Los Angeles, United States"
-         },
-         "region": "N. AMERICA",
-         "scene": "treaty",
-         "stats": [
-            {
-               "label": "Estate value",
-               "value": "$6.2m"
-            }
-         ],
-         "summary": [
-            "The former partner of Hayden Panettiere asked a Los Angeles court to put an administrator over her 6.2-million-dollar estate.",
-            "Her 11-year-old daughter stands to inherit; the actress died in August and left no will."
-         ],
-         "tier": "brief",
-         "urls": [
-            "https://www.usatoday.com/story/entertainment/celebrities/2026/11/24/hayden-panettiere-death-wladimir-klitschko-estate-value/92948082007/",
-            "https://parade.com/entertainment/hayden-panettiere-died-without-a-will-leaving-a-6-2-million-fortune-for-11-year-old-daughter-kayanow-wladimir-klitschko-is-stepping-in"
-         ],
-         "utc_hour": "16:00",
-         "watch_next": "Whether the court appoints the administrator and how the estate is divided."
-      }
-   ],
-   "tagline": "Thirty-six dated stories from one day, drawn and checked by the desk",
-   "utc_stamps": [
-      {
-         "event": "Solomon pact signed in Canberra",
-         "hour": "02:00"
-      },
-      {
-         "event": "Houthi claim on Ras Tanura",
-         "hour": "05:00"
-      },
-      {
-         "event": "Cairo toll confirmed at 31",
-         "hour": "07:00"
-      },
-      {
-         "event": "S&P puts Nvidia on watch",
-         "hour": "18:56"
-      },
-      {
-         "event": "Beige Book released",
-         "hour": "20:18"
-      },
-      {
-         "event": "Wall Street closes higher",
-         "hour": "21:00"
-      },
-      {
-         "event": "Taylor death announced",
-         "hour": "22:33"
-      }
-   ]
+   "tagline": "Thirty-six dated stories from one day, drawn and checked by the desk", "utc_stamps": [{"event": "Solomon pact signed in Canberra", "hour": "02:00"}, {"event": "Houthi claim on Ras Tanura", "hour": "05:00"}, {"event": "Cairo toll confirmed at 31", "hour": "07:00"}, {"event": "S&P puts Nvidia on watch", "hour": "18:56"}, {"event": "Beige Book released", "hour": "20:18"}, {"event": "Wall Street closes higher", "hour": "21:00"}, {"event": "Taylor death announced", "hour": "22:33"}]
 }
