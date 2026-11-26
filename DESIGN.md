@@ -159,31 +159,44 @@ with a Lanczos resize. That keeps one drawing correct for both the
 use only rectangles, ellipses, polygons, lines, and arcs, so they
 stay crisp at any size and cost nothing to reproduce.
 
-## Dot-matrix world map
+## World map: filled silhouettes
 
-The map is a 64 by 32 grid of dots. Land is stored as column ranges
-per row in `render.py`, which turns each land cell into a dot of
-radius 1.6 pixels in steel blue (120, 140, 170). The map box is
-x 24 to 724, y 684 to 780.
+The land is drawn as filled polygons whose vertices are longitude
+and latitude pairs stored in `render.py`, projected with the same
+rule as the pins and filled in slate blue-grey (104, 128, 162)
+with a darker coastline. The outlines are simple, a dozen to forty
+points per continent, but every continent keeps its real shape.
+The map box is x 24 to 604, y 684 to 778, a little smaller than
+the full section width.
 
 Pins use an equirectangular projection: longitude maps linearly
-across the box, latitude maps linearly down it. Each pin is a red
-circle, radius 10 for one digit and 11 for two, with a white border
-and a white number. Thirteen pins, numbered to match stories 1 to
-13. A key at x 740 lists the thirteen pinned places, one line each,
-in the same order as the stories.
+across the box, and latitude maps linearly down a cropped range,
+78 degrees north to 58 degrees south, so the continents get more
+vertical room than a full 180-degree span would give them. Each
+pin is a circle, radius 10 for one digit and 11 for two, with a
+white border and a white number, filled with its country's colour
+from the palette in `render.py`. Thirteen pins, numbered to match
+stories 1 to 13. Pins whose true positions fall within a few
+pixels of a neighbour (the two New York stories, Cairo and Gaza,
+Bruges and Paris) are nudged a few pixels inside the same city
+area so both numbers stay readable.
 
-The projection is coarse, and the desk knows it: at dot scale the
-eye reads continents, and the pins do the precise work. Pin
-coordinates are recorded in `sources.json` and in `GAZETTEER.md`.
+The key sits beside the map in two columns, at x 648 and x 824,
+pulled toward the middle of the page. Each line gives the story
+number and city in ink and the country in its pin colour, and the
+note above the key is centred over the key block. Pin coordinates
+are recorded in `sources.json` and in `GAZETTEER.md`.
 
 ## Briefs
 
-Two columns, 490 pixels wide each, starting at x 24 and x 526.
-Twelve rows, 11 pixels apart, starting at y 812. Each brief is one
-line: a bold number, then the headline in 11-pixel sans, shrunk to
-fit if it runs long. The column split is by row: the left column
-holds stories 14 to 25, the right holds 26 to 36.
+Two columns, 470 pixels wide each, starting at x 24 and x 518.
+Twelve rows, 10 pixels apart, starting at y 810, so the last row
+ends clear of the DATE CHECK box below. Each brief is one line: a
+bold number, then the headline in 10-pixel sans, shrunk to fit if
+it runs long. Place names inside the headlines are printed in
+their country's colour, the same palette as the map pins, so a
+reader can place a brief at a glance. The column split is by row:
+the left column holds stories 14 to 25, the right holds 26 to 36.
 
 ## Footer
 

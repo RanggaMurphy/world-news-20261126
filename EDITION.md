@@ -19,9 +19,11 @@ desk counts the first report date as the edition date. The same
 rule puts the F-15EX public display on the page and leaves the
 15 November arrival off it.
 
-A second clarification: stories 3 and 6 share the New York pin.
-The parade and the stock exchange are in the same city, so they
-share one dot. The key names both stories at that pin.
+A second clarification: stories 3 and 6 are both New York stories.
+The parade and the stock exchange are in the same city, so their
+pins sit a few pixels apart on the map, close enough to read as
+one place, far enough apart that both numbers stay legible. The
+key names both stories.
 
 ## How to read this page
 
@@ -52,7 +54,8 @@ This page was built to that brief:
 - A region strip, a UTC strip, and a numbers strip, each carrying
   real figures from the day.
 - Thirteen drawn scenes, one per pictured story, never photographs.
-- A dot-matrix world map with thirteen numbered pins.
+- A filled-silhouette world map with thirteen numbered pins, each
+  pin in its country's colour.
 - A certainty label on every story and a printed legend.
 - A red-bordered date check that names the stories left out for
   belonging to other days.
@@ -83,7 +86,7 @@ That is the job.
 - Stories: 36 dated, 7 regions, 13 drawn scenes
 - Built by: the desk, in one session, from wires and outlet reports
   dated 26 November 2026, paraphrased throughout
-- Drawn by: `render.py`, vector scenes and a dot-matrix map
+- Drawn by: `render.py`, vector scenes and a silhouette map
 - Checked by: `render.py --strict` and `verify.py`
 - Licence: MIT
 

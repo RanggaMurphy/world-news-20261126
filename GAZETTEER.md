@@ -1,7 +1,7 @@
 # Gazetteer — places on the page
 
 Every place named on the page, with its story number, its region,
-and the pin coordinates used by the dot-matrix map. Coordinates are
+and the pin coordinates used by the world map. Coordinates are
 in decimal degrees. Pins are numbered to match stories 1 to 13; the
 briefs name places too, and those are listed after the pinned
 places with their coordinates for the record.
@@ -13,7 +13,7 @@ places with their coordinates for the record.
 Story 1, the tanker fire. Region: Africa. Pin: 30.04 N, 31.24 E.
 The ring road around the capital, where the tanker overturned.
 The map pin sits on the Nile delta, at the eastern edge of the
-Mediterranean coast's dot band.
+Mediterranean coast of the African landmass.
 
 ### 2. Ras Tanura, Saudi Arabia
 
@@ -27,14 +27,14 @@ the Strait of Hormuz band.
 Story 3, the Wall Street comeback. Region: North America. Pin:
 40.71 N, 74.01 W. The New York Stock Exchange, where the Dow closed
 at 50,183 after erasing a 1,100-point loss. The pin sits on the
-eastern seaboard of the North American dots.
+eastern seaboard of the North American landmass.
 
 ### 4. Gaza City
 
 Story 4, the strike. Region: Middle East. Pin: 31.50 N, 34.47 E.
 The strike on Gaza City that killed the Hamas internal security
 chief and his family. The pin sits on the eastern Mediterranean
-coast, just west of the Jordan valley dots.
+coast, just west of the Jordan valley.
 
 ### 5. Cartagena, Colombia
 
@@ -46,37 +46,38 @@ South American pin on the map.
 ### 6. New York, United States
 
 Story 6, the delayed parade. Region: North America. Pin: 40.71 N,
-74.01 W. The same pin as story 3: the parade route and the stock
-exchange share a city, so they share a dot. The desk considered
-offsetting one of them and decided against it: two stories, one
-place, one pin, and the key names both.
+74.01 W. The same city as story 3: the parade route and the stock
+exchange share a place, so their pins sit a few pixels apart on
+the map, nudged just far enough that both numbers stay readable.
+Two stories, one city, two pins, and the key names both.
 
 ### 7. Dhaka, Bangladesh
 
 Story 7, the garment pay rise. Region: Asia. Pin: 23.81 N,
 90.41 E. The capital where the minimum wage decision was announced
 after weeks of street protests. The pin sits on the Ganges delta,
-east of the Indian dots.
+east of the Indian landmass.
 
-### 8. Washington, United States
+### 8. Taipei, Taiwan
 
-Story 8, the tariff proposal. Region: North America. Pin: 38.91 N,
-77.04 W. The trade office that proposed Section 301 duties on 14
-economies. The pin sits just south of the New York pin on the same
-seaboard.
+Story 8, the tariff proposal. Region: Asia. Pin: 25.03 N,
+121.56 E. The proposal came from the trade office in Washington,
+which announced Section 301 duties on 14 economies; the desk
+pinned the story at Taipei, whose proposed cap of 15 percent is
+one of the announcement's headline figures.
 
 ### 9. Santa Clara, United States
 
 Story 9, Nvidia on downgrade watch. Region: North America. Pin:
 37.35 N, 121.95 W. Nvidia's headquarters in Silicon Valley. The
-pin sits on the Pacific coast of the North American dots, far west
+pin sits on the Pacific coast of the North American landmass, far west
 of the New York and Washington pins.
 
 ### 10. Bruges, Belgium
 
 Story 10, Liverpool and Barcelona in Europe. Region: Europe. Pin:
 51.21 N, 3.22 E. Club Brugge's ground, where Liverpool won 3-0.
-The pin sits on the North Sea coast of the European dots. Barcelona
+The pin sits on the North Sea coast of the European landmass. Barcelona
 played at Sabah, whose ground is not pinned: one pin per story, and
 the desk chose the match the headline leads with.
 
@@ -85,7 +86,7 @@ the desk chose the match the headline leads with.
 Story 11, PSG's perfect run ends. Region: Europe. Pin: 48.86 N,
 2.35 E. The Parc des Princes, where Paris were held 2-2 by Roma.
 The pin sits on the northern French plain, just south of the
-Channel dots.
+Channel coast.
 
 ### 12. Honiara, Solomon Islands
 
@@ -110,7 +111,7 @@ so the next edition can pin them if the format changes.
 
 - Taipei, Taiwan, 25.03 N, 121.56 E. Story 14, the market fall.
 - Washington, United States, 38.91 N, 77.04 W. Story 15, the Beige
-  Book. Same place as story 8.
+  Book.
 - Okinawa, Japan, 26.21 N, 127.68 E. Story 16, the fighter jet.
 - Gulf of Oman, 25.00 N, 59.00 E. Story 17, the tanker mines.
 - Samara, Russia, 53.20 N, 50.15 E. Story 18, the refineries.
@@ -127,13 +128,17 @@ so the next edition can pin them if the format changes.
 
 ## How pins are projected
 
-The map box runs x 24 to 724 and y 684 to 780 in page pixels. A
+The map box runs x 24 to 604 and y 684 to 778 in page pixels. A
 pin's page position is computed from its longitude and latitude by
-a straight equirectangular projection: longitude minus 180, divided
-by 360, times the box width, plus the box's left edge; and 90 minus
-latitude, divided by 180, times the box height, plus the box's top
-edge. The projection is coarse by design. At dot scale the eye
-reads continents, and the pins do the precise work.
+a straight equirectangular projection: longitude plus 180, divided
+by 360, times the box width, plus the box's left edge; and 78 minus
+latitude, divided by 136, times the box height, plus the box's top
+edge. The latitude range is cropped, 78 north to 58 south, so the
+continents get more vertical room and the empty far north and the
+ocean-only far south do not eat the box. A few pins are then nudged
+a few pixels by hand, where two true positions would print on top
+of each other. The projection is a locator, not a survey: the
+decimal coordinates in this file are the precise record.
 
 ## Regions on the page
 
@@ -152,9 +157,9 @@ stories have in common on this day.
   Taiwan, India, Pakistan, North Korea, Japan, China, and the Gulf.
   Asia's day was made of markets, wages, packages, and a space
   station.
-- **North America, 7 stories.** Wall Street, the tariffs, Nvidia,
-  the parade, the Beige Book, and two briefs from Los Angeles. The
-  region's day was made of markets and government.
+- **North America, 7 stories.** Wall Street, Nvidia, the parade,
+  the Beige Book, the AI-bust warning, and two briefs from Los
+  Angeles. The region's day was made of markets and government.
 - **South America, 1 story.** The Colombia siege, 76 freed after
   17 hours. One story, and it is the day's longest by the clock.
 - **Oceania, 1 story.** The Solomon Islands treaty, signed in
@@ -168,27 +173,33 @@ verifies the sum before every commit.
 
 ## How the map was drawn
 
-The map is drawn from a hand-written land grid, 64 columns by 32
-rows, stored as column ranges per row in `render.py`. Each land
-cell becomes one dot of radius 1.6 pixels in steel blue. The grid
-is coarse by design: at dot scale the eye reads continents, not
-coastlines, and the pins do the precise work.
+The map is drawn from hand-written continent outlines stored in
+`render.py` as lists of longitude and latitude pairs, one polygon
+per continent or island group. Each polygon is projected with the
+same rule as the pins and filled in slate blue-grey with a darker
+coastline, so the page carries a real world map: the Americas on
+the left, Africa and Eurasia in the middle, Indonesia and
+Australia on the right.
 
-The grid was written by looking at a world map and marking, row by
-row, which columns hold land. North America occupies the left of
-the upper rows, South America the left of the middle rows, Europe
-and Africa the centre, Asia the right, Australia the lower right,
-and Antarctica the bottom row. The desk checked the grid by
-rendering it and reading the result: the continents must be
-recognisable at a glance, and the pins must sit on land, not on
-water. Two pins needed adjusting in the first render: the Honiara
-pin, which sat too far right, and the Santa Clara pin, which sat on
-the coast rather than inland. Both were corrected by moving the pin
-coordinates, not by moving the grid.
+The outlines were written from a world map, keeping each
+continent's real shape and neighbours with a dozen to forty points
+per outline. The desk checked them by rendering and reading the
+result: the continents must be recognisable at a glance, and the
+pins must sit on the right countries. The first filled render hid
+two pins under their neighbours, the second New York pin under the
+first and the Cairo pin under the Gaza pin, and Bruges and Paris
+overlapped the same way. Those pins are now nudged a few pixels
+inside their own city areas, by hand, so every number from 1 to 13
+stays readable.
 
-The projection is equirectangular: longitude maps linearly across
-the box, latitude maps linearly down it. The desk knows this
-stretches the far north and the far south. At dot scale the
-distortion does not matter, because the map is a locator, not a
-survey. A reader who wants exact positions will find the decimal
-coordinates in this file.
+Each pin is filled with its country's colour, and the same colour
+prints the country name in the key beside the map and the place
+names inside the briefs, so one country's colour can be followed
+across the whole lower half of the page.
+
+The projection is equirectangular with a cropped latitude range:
+longitude maps linearly across the box, latitude maps linearly
+down the span from 78 north to 58 south. The desk knows this
+stretches the far north. The distortion does not matter, because
+the map is a locator, not a survey. A reader who wants exact
+positions will find the decimal coordinates in this file.

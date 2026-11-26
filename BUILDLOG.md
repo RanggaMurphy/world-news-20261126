@@ -207,3 +207,36 @@ that the next edition can see why things are the way they are.
   not see summaries colliding with chips. The desk added a check
   that measures the summary's bottom against the chip's top, so the
   fault cannot return silently.
+
+## Post-build revision: the map and the colours
+
+After the build, the page went back to the desk with review notes
+on its lower half, and the desk revised before submitting:
+
+- The dot-matrix map became a real world map. The 64 by 32 dot grid
+  is gone; the land is now drawn as filled continent polygons from
+  longitude and latitude outlines in `render.py`, with the latitude
+  range cropped to 78 north and 58 south so the continents keep
+  their shapes in a short, wide box. The map itself is a little
+  smaller than before, 580 by 94 pixels.
+- The pin key moved toward the middle of the page: two columns
+  beside the map instead of one thin strip in the far right corner,
+  with the note centred over the key block.
+- Every country has one colour, used three ways: the pin dots on
+  the map, the country names in the key, and the place names inside
+  the briefs. A reader can follow Egypt's bronze, or India's
+  saffron, across the whole lower half of the page.
+- Three pin pairs printed on top of each other at this scale: the
+  two New York pins, Cairo and Gaza, and Bruges and Paris. Those
+  pins are nudged a few pixels inside their own city areas, so all
+  thirteen numbers are readable.
+- The briefs were re-pitched from 11 pixels to 10 and start two
+  pixels higher, because the last row of the left column, story 25,
+  printed over the DATE CHECK border. It now ends clear of the box.
+- `verify.py` checks the map band for filled land instead of dots,
+  and the design, gazetteer, edition and readme notes were updated
+  to describe the map the page actually carries.
+
+The revision renders deterministically: two runs of `render.py`
+produce the same sha256 for `entry.png`, the strict layout audit
+reports no overflow, and `verify.py` passes.

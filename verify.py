@@ -205,16 +205,17 @@ def check_image(problems):
             if got != expected:
                 problems.append("%s: pixel (%d, %d) is %s, expected %s"
                                 % (what, x, y, got, expected))
-        # The dot map must actually contain dots in its band.
-        dot_colour = (120, 140, 170)
-        dots = 0
-        for mx in range(24, 724, 4):
-            for my in range(684, 780, 4):
-                if pixels.getpixel((mx, my)) == dot_colour:
-                    dots += 1
-        if dots < 100:
-            problems.append("world map band has only %d dot samples, "
-                            "expected at least 100" % dots)
+        # The world map must actually contain filled land in its band:
+        # solid continent silhouettes cover a large share of the box.
+        land_colour = (104, 128, 162)
+        land = 0
+        for mx in range(24, 604, 4):
+            for my in range(684, 778, 4):
+                if pixels.getpixel((mx, my)) == land_colour:
+                    land += 1
+        if land < 300:
+            problems.append("world map band has only %d land samples, "
+                            "expected at least 300" % land)
         # Each feature scene must hold more than one colour: a drawn
         # scene, not a blank panel.
         scene_boxes = [

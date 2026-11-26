@@ -5,8 +5,9 @@ The program reads sources.json in the same folder and draws a single
 1024 by 1024 newspaper front page called entry.png. The page follows the
 winner format the desk settled on after studying four days of leaderboard
 results: a black masthead band, a big serif date line, three feature
-stories with drawn scenes, a ten-item grid, a dot-matrix world map with
-numbered pins, a two-column briefs list, and a red-bordered DATE CHECK
+stories with drawn scenes, a ten-item grid, a filled-silhouette world
+map with numbered pins, a two-column briefs list, and a red-bordered
+DATE CHECK
 footer with a HOW SURE legend.
 
 Everything on the page is drawn by this program. There are no photographs
@@ -50,10 +51,10 @@ INK = (26, 24, 20)             # near-black text
 INK_SOFT = (74, 68, 58)        # grey-brown for secondary text
 BLACK_BAND = (18, 16, 14)      # masthead band
 RULE = (26, 24, 20)            # hairlines and rules
-RED = (178, 34, 34)            # DATE CHECK red and map pins
+RED = (178, 34, 34)            # DATE CHECK box red
 RED_DARK = (139, 26, 26)
 BLUE_BAND = (31, 58, 95)       # region strip
-BLUE_SOFT = (214, 226, 240)    # map dots and panel tints
+BLUE_SOFT = (214, 226, 240)    # light panel tints
 GREEN_BAND = (46, 94, 60)      # numbers strip
 GOLD = (176, 141, 60)          # small accents
 WHITE = (255, 255, 255)
@@ -663,50 +664,200 @@ def draw_scene(image, draw, category, box):
 
 
 # ---------------------------------------------------------------------------
-# Dot-matrix world map
+# World map: filled continent silhouettes
 # ---------------------------------------------------------------------------
-# The land is stored as column ranges per row of a 64 by 32 grid, which
-# the renderer turns into dots. The shapes are deliberately coarse: at
-# dot scale the eye reads continents, not coastlines, and the numbered
-# pins do the precise work.
+# The land is drawn as filled polygons whose vertices are longitude and
+# latitude pairs, projected with the same equirectangular rule as the
+# pins, so a pin computed from a story's coordinates lands on the right
+# country. The outlines are deliberately simple, a dozen to forty
+# points per continent, but every continent keeps its real shape and
+# its real neighbours: the Americas on the left, Africa and Eurasia in
+# the middle, Indonesia and Australia on the right.
 
-LAND_ROWS = [
-    [],
-    [(8, 14), (38, 56)],
-    [(7, 16), (37, 58)],
-    [(6, 17), (30, 33), (36, 58)],
-    [(6, 18), (30, 36), (37, 58)],
-    [(7, 18), (30, 37), (38, 57)],
-    [(8, 18), (30, 37), (39, 56)],
-    [(9, 19), (30, 36), (40, 56)],
-    [(9, 18), (31, 35), (41, 55)],
-    [(10, 17), (31, 36), (42, 54)],
-    [(11, 16), (31, 36), (43, 52)],
-    [(12, 15), (31, 36), (44, 51)],
-    [(13, 15), (32, 36), (45, 50)],
-    [(14, 16), (32, 36), (46, 49)],
-    [(16, 18), (32, 35), (47, 49)],
-    [(17, 20), (32, 34), (48, 50)],
-    [(18, 21), (32, 34), (49, 52)],
-    [(18, 22), (32, 34), (50, 54)],
-    [(19, 22), (32, 34), (51, 55)],
-    [(19, 23), (33, 35), (52, 56)],
-    [(20, 23), (33, 34), (52, 57)],
-    [(20, 23), (52, 56)],
-    [(21, 23), (53, 55)],
-    [(21, 22), (54, 54)],
-    [(21, 22)],
-    [(21, 21)],
-    [],
-    [],
-    [],
-    [],
-    [(18, 46)],
-    [(22, 42)],
+LAND_FILL = (104, 128, 162)    # slate blue-grey for the continents
+LAND_EDGE = (84, 104, 132)     # slightly darker coastline
+
+CONTINENTS = [
+    # North America, from Alaska down to Panama.
+    [(-168, 66), (-161, 58), (-153, 58), (-147, 60), (-141, 70),
+     (-134, 69), (-127, 70), (-117, 69), (-108, 68), (-96, 69),
+     (-89, 69), (-84, 66), (-80, 62), (-76, 60), (-70, 58),
+     (-65, 60), (-60, 55), (-64, 50), (-66, 45), (-69, 44),
+     (-71, 42), (-74, 40), (-75, 37), (-76, 35), (-79, 33),
+     (-80, 31), (-81, 26), (-80, 25), (-83, 28), (-85, 30),
+     (-89, 30), (-92, 29), (-96, 28), (-97, 26), (-97, 23),
+     (-95, 19), (-92, 15), (-88, 14), (-84, 12), (-80, 9),
+     (-78, 8), (-82, 9), (-85, 11), (-88, 14), (-91, 14),
+     (-95, 16), (-97, 16), (-101, 17), (-104, 19), (-106, 22),
+     (-109, 23), (-113, 29), (-115, 32), (-117, 33), (-121, 34),
+     (-123, 37), (-124, 41), (-124, 46), (-128, 50), (-132, 54),
+     (-136, 57), (-145, 60), (-155, 59), (-162, 60)],
+    # Greenland.
+    [(-46, 59), (-42, 62), (-40, 65), (-32, 68), (-24, 70),
+     (-20, 72), (-21, 76), (-28, 79), (-40, 80), (-52, 78),
+     (-56, 74), (-55, 70), (-53, 65), (-51, 61)],
+    # South America.
+    [(-77, 7), (-79, 9), (-77, 11), (-73, 11), (-68, 11),
+     (-63, 10), (-59, 8), (-54, 6), (-51, 4), (-50, 1),
+     (-46, -1), (-41, -3), (-36, -6), (-35, -8), (-37, -11),
+     (-39, -14), (-39, -17), (-40, -21), (-44, -23), (-49, -26),
+     (-52, -29), (-54, -33), (-57, -35), (-58, -38), (-60, -39),
+     (-62, -41), (-62, -44), (-64, -47), (-65, -49), (-66, -52),
+     (-68, -54), (-69, -55), (-71, -54), (-73, -51), (-74, -48),
+     (-74, -44), (-73, -39), (-72, -33), (-71, -28), (-70, -22),
+     (-70, -18), (-73, -16), (-76, -13), (-78, -9), (-80, -6),
+     (-81, -3), (-80, 0), (-79, 3), (-77, 5)],
+    # Eurasia, one landmass from Portugal to Kamchatka, with the
+    # Arabian peninsula, India and South-East Asia on its south coast.
+    [(-9, 37), (-9, 40), (-9, 43), (-8, 44), (-4, 44), (-2, 44),
+     (-1, 45), (-4, 47), (-5, 48), (-2, 49), (0, 50), (2, 51),
+     (4, 52), (6, 53), (7, 54), (8, 55), (8, 56), (7, 57),
+     (8, 58), (6, 58), (5, 59), (5, 60), (6, 61), (8, 62),
+     (11, 63), (13, 65), (16, 67), (19, 68), (22, 69), (26, 70),
+     (30, 70), (34, 69), (40, 67), (44, 67), (48, 68), (53, 69),
+     (58, 69), (64, 69), (69, 70), (75, 71), (82, 72), (90, 74),
+     (98, 76), (105, 77), (112, 74), (120, 73), (128, 72),
+     (136, 72), (144, 72), (152, 71), (160, 70), (169, 70),
+     (178, 68), (178, 65), (172, 62), (169, 60), (162, 59),
+     (159, 56), (161, 53), (157, 51), (152, 49), (147, 47),
+     (143, 45), (141, 42), (140, 39), (138, 36), (135, 34),
+     (131, 33), (127, 33), (122, 31), (121, 28), (118, 25),
+     (114, 22), (110, 20), (108, 17), (108, 14), (107, 11),
+     (105, 8), (103, 6), (101, 5), (99, 7), (98, 10), (97, 13),
+     (95, 16), (93, 18), (91, 22), (89, 22), (87, 21), (86, 19),
+     (84, 18), (82, 16), (80, 14), (79, 11), (77, 8), (76, 10),
+     (75, 13), (73, 16), (72, 19), (71, 21), (68, 23), (66, 25),
+     (63, 25), (59, 25), (56, 26), (53, 27), (51, 28), (50, 29),
+     (49, 30), (50, 28), (52, 25), (54, 24), (56, 24), (58, 23),
+     (59, 22), (57, 20), (55, 18), (53, 16), (50, 14), (46, 12),
+     (44, 12), (42, 14), (40, 17), (38, 21), (36, 25), (34, 28),
+     (33, 30), (30, 31), (27, 31), (24, 32), (21, 33), (18, 33),
+     (15, 32), (13, 33), (11, 34), (10, 36), (10, 37), (7, 37),
+     (4, 37), (2, 37), (-1, 37), (-4, 36), (-6, 36), (-8, 37)],
+    # Africa.
+    [(-6, 35), (-9, 32), (-11, 30), (-13, 28), (-15, 26),
+     (-16, 23), (-17, 20), (-17, 17), (-17, 15), (-16, 13),
+     (-14, 10), (-13, 8), (-11, 6), (-8, 4), (-4, 5), (0, 5),
+     (4, 6), (7, 4), (9, 4), (9, 0), (10, -2), (12, -5),
+     (13, -9), (13, -13), (12, -16), (13, -20), (14, -23),
+     (15, -26), (16, -29), (18, -32), (19, -34), (22, -35),
+     (26, -34), (29, -32), (31, -29), (33, -27), (35, -24),
+     (36, -21), (37, -18), (38, -15), (39, -11), (40, -7),
+     (40, -4), (41, -1), (44, 1), (48, 4), (51, 8), (51, 11),
+     (48, 11), (44, 11), (42, 12), (40, 14), (38, 18), (37, 21),
+     (35, 24), (34, 27), (33, 29), (32, 31), (30, 31), (26, 32),
+     (21, 33), (17, 33), (13, 33), (11, 34), (10, 36), (6, 37),
+     (2, 37), (-1, 36), (-4, 35)],
+    # Britain and Ireland.
+    [(-3, 53), (-4, 55), (-5, 57), (-4, 58), (-2, 58), (-1, 57),
+     (-2, 55), (-1, 53), (0, 52), (1, 51), (-1, 50), (-3, 50),
+     (-5, 50), (-4, 52)],
+    [(-10, 52), (-8, 51), (-6, 52), (-6, 54), (-8, 55),
+     (-10, 54)],
+    # Iceland.
+    [(-22, 64), (-18, 63), (-14, 64), (-15, 66), (-19, 66),
+     (-22, 65)],
+    # Japan, one thin island chain.
+    [(130, 31), (132, 33), (134, 34), (136, 34), (138, 35),
+     (140, 36), (140, 38), (141, 40), (141, 42), (142, 44),
+     (141, 45), (140, 44), (139, 41), (139, 38), (137, 36),
+     (135, 34), (132, 33), (130, 32)],
+    # Taiwan.
+    [(120, 23), (121, 23), (122, 25), (121, 25), (120, 24)],
+    # The Philippines, one northern blob.
+    [(120, 13), (121, 15), (122, 17), (122, 18), (120, 17),
+     (119, 15)],
+    # Sumatra, Java, Borneo, Sulawesi and New Guinea.
+    [(95, 5), (98, 4), (100, 2), (102, 0), (104, -2), (105, -4),
+     (106, -6), (104, -5), (102, -3), (100, -1), (97, 2), (95, 4)],
+    [(106, -6), (109, -6), (112, -7), (114, -8), (114, -9),
+     (111, -8), (108, -8), (106, -7)],
+    [(109, 0), (110, 2), (112, 3), (114, 4), (116, 5), (118, 3),
+     (119, 1), (118, -1), (116, -3), (113, -3), (111, -2),
+     (109, -1)],
+    [(119, 0), (120, 1), (121, 1), (120, 0), (121, -1),
+     (120, -3), (119, -2), (119, -1)],
+    [(131, -1), (134, -2), (137, -2), (140, -3), (143, -4),
+     (146, -6), (149, -8), (150, -10), (147, -9), (144, -8),
+     (141, -7), (138, -6), (135, -4), (132, -3)],
+    # Australia.
+    [(114, -22), (112, -24), (113, -27), (114, -30), (115, -33),
+     (117, -35), (120, -34), (124, -33), (128, -32), (131, -32),
+     (133, -32), (135, -34), (136, -35), (138, -35), (139, -37),
+     (141, -38), (144, -38), (147, -39), (150, -37), (152, -33),
+     (153, -29), (153, -25), (151, -22), (149, -20), (146, -19),
+     (144, -16), (142, -13), (142, -11), (141, -13), (140, -16),
+     (137, -15), (136, -13), (135, -12), (133, -11), (131, -12),
+     (129, -13), (126, -14), (123, -16), (121, -18), (118, -20),
+     (116, -21)],
+    # New Zealand and Madagascar.
+    [(167, -45), (169, -44), (171, -43), (173, -42), (174, -40),
+     (176, -38), (175, -37), (173, -39), (172, -41), (170, -43),
+     (168, -46)],
+    [(44, -15), (47, -14), (49, -15), (50, -17), (49, -20),
+     (48, -22), (46, -24), (45, -25), (44, -23), (43, -20),
+     (43, -17)],
 ]
 
-MAP_COLS = 64
-MAP_ROWS = 32
+# One colour per country, used for the pin dots on the map, the
+# country names in the pin key, and the place names inside the
+# briefs, so a reader can follow one country's colour across the
+# whole lower half of the page.
+COUNTRY_COLORS = {
+    "Egypt": (158, 108, 27),
+    "Saudi Arabia": (8, 122, 61),
+    "United States": (27, 79, 174),
+    "Gaza City": (142, 14, 107),
+    "Colombia": (133, 100, 4),
+    "Bangladesh": (0, 121, 107),
+    "Taiwan": (126, 87, 194),
+    "Belgium": (176, 48, 96),
+    "France": (74, 20, 140),
+    "Solomon Islands": (2, 119, 189),
+    "China": (198, 26, 26),
+    "Japan": (178, 34, 52),
+    "Iran": (0, 128, 128),
+    "Ukraine": (30, 110, 200),
+    "Russia": (146, 32, 32),
+    "North Korea": (104, 24, 136),
+    "India": (217, 95, 6),
+    "Nepal": (16, 142, 106),
+    "European Union": (0, 82, 147),
+}
+
+
+def split_place(place):
+    """Split a pin place into (city, country label).
+
+    Most places read "City, Country". A place with no comma (Gaza
+    City) is its own country label, so the whole string takes the
+    colour.
+    """
+    if ", " in place:
+        city, country = place.rsplit(", ", 1)
+        return city, country
+    return "", place
+
+
+def country_colour(place):
+    """The colour assigned to the country a pin place belongs to."""
+    _, country = split_place(place)
+    return COUNTRY_COLORS.get(country, RED)
+
+
+# Hand-set nudges for the pins whose true positions fall within a few
+# pixels of a neighbour at this map scale: the two New York stories,
+# the Cairo and Gaza pair, and Bruges and Paris. Each nudge keeps its
+# pin inside the same city area while separating the numbers enough
+# to read both.
+PIN_NUDGE = {
+    1: (-14, 6),
+    3: (-8, -12),
+    4: (0, -13),
+    6: (10, 8),
+    10: (-4, -14),
+    11: (8, 9),
+}
 
 
 def lon_to_x(lon, map_x, map_w):
@@ -714,34 +865,54 @@ def lon_to_x(lon, map_x, map_w):
     return map_x + (lon + 180.0) / 360.0 * map_w
 
 
+# The map crops the empty far north and the ocean-only far south, so
+# the continents get more vertical room inside a short, wide box and
+# keep shapes a reader recognises instead of a squashed ribbon.
+LAT_TOP = 78.0
+LAT_BOTTOM = -58.0
+
+
 def lat_to_y(lat, map_y, map_h):
-    """Equirectangular projection: latitude to pixel y."""
-    return map_y + (90.0 - lat) / 180.0 * map_h
+    """Equirectangular projection, cropped: latitude to pixel y."""
+    return map_y + (LAT_TOP - lat) / (LAT_TOP - LAT_BOTTOM) * map_h
 
 
-def draw_dot_map(draw, fonts, stories, map_box, audit):
-    """Draw the dotted world map and the numbered pins for stories 1-13."""
+def draw_world_map(draw, fonts, stories, map_box, audit):
+    """Draw the filled world map and the numbered pins for stories 1-13.
+
+    Each pin dot takes the colour of its story's country, the same
+    colour the country name carries in the key beside the map. Two
+    pins share New York, so a pin that would land on top of an
+    earlier one is nudged a few pixels, still inside the same city
+    area, until both numbers stay readable.
+    """
     x, y, w, h = map_box
-    cell_w = w / MAP_COLS
-    cell_h = h / MAP_ROWS
-    for row, ranges in enumerate(LAND_ROWS):
-        cy = y + row * cell_h + cell_h / 2
-        for start, end in ranges:
-            for col in range(start, end + 1):
-                cx = x + col * cell_w + cell_w / 2
-                r = 1.6
-                draw.ellipse([cx - r, cy - r, cx + r, cy + r],
-                             fill=(120, 140, 170))
+    for polygon in CONTINENTS:
+        points = [(lon_to_x(lon, x, w), lat_to_y(lat, y, h))
+                  for lon, lat in polygon]
+        draw.polygon(points, fill=LAND_FILL, outline=LAND_EDGE)
+    placed = []
     for story in stories:
         if story["number"] > 13:
             continue
         pin = story["pin"]
         px = lon_to_x(pin["lon"], x, w)
         py = lat_to_y(pin["lat"], y, h)
+        nudge_x, nudge_y = PIN_NUDGE.get(story["number"], (0, 0))
+        px += nudge_x
+        py += nudge_y
+        for dx, dy in [(0, 0), (16, 9), (-16, 9), (16, -10), (-16, -10),
+                       (0, 16), (0, -16)]:
+            if all((px + dx - qx) ** 2 + (py + dy - qy) ** 2 >= 17 ** 2
+                   for qx, qy in placed):
+                px, py = px + dx, py + dy
+                break
+        placed.append((px, py))
         num = str(story["number"])
         radius = 10 if len(num) == 1 else 11
         draw.ellipse([px - radius, py - radius, px + radius, py + radius],
-                     fill=RED, outline=WHITE, width=2)
+                     fill=country_colour(pin["place"]), outline=WHITE,
+                     width=2)
         tw = text_width(fonts.pin, num)
         th = text_height(fonts.pin, num)
         draw.text((px - tw / 2, py - th / 2 - 1), num, font=fonts.pin,
@@ -940,30 +1111,122 @@ def draw_grid(image, draw, fonts, data, audit):
         draw_chip(draw, fonts, story["certainty"], x + 6, chip_y)
 
 
+def draw_legend_line(draw, story, x, y, max_w):
+    """One pin-key line: number and city in ink, country in its colour."""
+    city, country = split_place(story["pin"]["place"])
+    parts = [("%d  " % story["number"], INK)]
+    if city:
+        parts.append((city + ", ", INK))
+    parts.append((country, COUNTRY_COLORS.get(country, INK)))
+    size = 10
+    while size > 7:
+        font = load_font("DejaVuSans.ttf", size)
+        total = sum(text_width(font, text) for text, _ in parts)
+        if total <= max_w:
+            break
+        size -= 1
+    cx = x
+    for text, colour in parts:
+        draw.text((cx, y), text, font=font, fill=colour)
+        cx += text_width(font, text)
+
+
 def draw_map_section(draw, fonts, data, audit):
-    """Section title plus the dot map with numbered pins 1 to 13."""
+    """Section title, the world map, and the pin key beside it.
+
+    The map is drawn a little smaller than the full section width,
+    and the key sits in two columns pulled toward the middle of the
+    page instead of a thin strip in the far right corner. The note
+    above the key is centred over the key block.
+    """
     y = 660
     draw.text((24, y), "WHERE IT HAPPENED", font=fonts.section, fill=INK)
+    pinned = [s for s in data["stories"] if s["number"] <= 13]
+    key_x0, key_x1 = 648, WIDTH - 24
     note = "Pins are numbered to match stories 1-13"
     nw = text_width(fonts.caption, note)
-    draw.text((WIDTH - 24 - nw, y + 2), note, font=fonts.caption,
-              fill=INK_SOFT)
+    draw.text((key_x0 + (key_x1 - key_x0 - nw) / 2, y + 2), note,
+              font=fonts.caption, fill=INK_SOFT)
     draw.line([24, y + 18, WIDTH - 24, y + 18], fill=RULE, width=1)
-    map_box = (24, y + 24, 700, 96)
-    draw_dot_map(draw, fonts, data["stories"], map_box, audit)
-    # Key at the right of the map: the thirteen pinned places, one line each.
-    kx = 740
-    ky = y + 24
-    pinned = [s for s in data["stories"] if s["number"] <= 13]
+    map_box = (24, y + 24, 580, 94)
+    draw_world_map(draw, fonts, data["stories"], map_box, audit)
+    col_x = [648, 824]
+    col_w = 152
+    rows = (len(pinned) + 1) // 2
     for i, story in enumerate(pinned):
-        line = "%d  %s" % (story["number"], story["pin"]["place"])
-        font = fit_or_shrink("DejaVuSans.ttf", 9, line, WIDTH - kx - 24)
-        draw.text((kx, ky + i * 8 - 2), line, font=font, fill=INK_SOFT)
-    audit.record("map key", len(pinned), 13, WIDTH - kx - 24)
+        col, row = divmod(i, rows)
+        draw_legend_line(draw, story, col_x[col], y + 28 + row * 13,
+                         col_w)
+    audit.record("map key", len(pinned), 13, col_w)
+
+
+# Place names inside the brief headlines, with the country each one
+# takes its colour from. Only briefs whose headline actually names a
+# place are listed; the rest of the headline stays in ink. The colours
+# are the same COUNTRY_COLORS the map pins and the pin key use.
+BRIEF_PLACES = {
+    14: [("Taiwan", "Taiwan")],
+    16: [("Okinawa", "Japan")],
+    17: [("Tehran", "Iran")],
+    18: [("Kyiv", "Ukraine")],
+    19: [("Moscow", "Russia")],
+    20: [("North Korea", "North Korea")],
+    21: [("India", "India")],
+    22: [("India", "India"), ("Nepal", "Nepal")],
+    31: [("India", "India")],
+    33: [("EU", "European Union")],
+    35: [("India", "India")],
+}
+
+
+def brief_segments(headline, number):
+    """Split a brief headline into (text, colour) spans.
+
+    The place names listed for this story number are cut out of the
+    headline and coloured with their country's colour; everything
+    else stays in ink.
+    """
+    spans = [(headline, INK)]
+    for token, country in BRIEF_PLACES.get(number, []):
+        colour = COUNTRY_COLORS.get(country, INK)
+        out = []
+        for text, col in spans:
+            if col != INK or token not in text:
+                out.append((text, col))
+                continue
+            before, _, after = text.partition(token)
+            if before:
+                out.append((before, INK))
+            out.append((token, colour))
+            if after:
+                out.append((after, INK))
+        spans = out
+    return spans
+
+
+def draw_brief_headline(draw, story, x, y, max_w):
+    """Draw one brief headline, shrinking until it fits its column."""
+    spans = brief_segments(story["headline"], story["number"])
+    size = 10
+    while size > 7:
+        font = load_font("DejaVuSans.ttf", size)
+        total = sum(text_width(font, text) for text, _ in spans)
+        if total <= max_w:
+            break
+        size -= 1
+    cx = x
+    for text, colour in spans:
+        draw.text((cx, y), text, font=font, fill=colour)
+        cx += text_width(font, text)
 
 
 def draw_briefs(draw, fonts, data, audit):
-    """Two columns of one-line briefs, numbered 14 to the end."""
+    """Two columns of one-line briefs, numbered 14 to the end.
+
+    The rows run at a ten-pixel pitch starting just under the rule,
+    so the last row of each column ends clear of the DATE CHECK box
+    below instead of printing over its border.
+    """
     y = 788
     briefs = [s for s in data["stories"] if s["tier"] == "brief"]
     title = "ALSO ON THURSDAY 26 NOVEMBER"
@@ -973,18 +1236,16 @@ def draw_briefs(draw, fonts, data, audit):
     draw.text((WIDTH - 24 - cw, y + 2), count, font=fonts.caption,
               fill=INK_SOFT)
     draw.line([24, y + 18, WIDTH - 24, y + 18], fill=RULE, width=1)
-    col_w = 490
+    col_w = 470
     rows = (len(briefs) + 1) // 2
     for i, story in enumerate(briefs):
         col, row = divmod(i, rows)
-        x = 24 + col * (col_w + 12)
-        by = y + 24 + row * 11
+        x = 24 + col * (col_w + 24)
+        by = y + 22 + row * 10
         num = "%d." % story["number"]
         draw.text((x, by), num, font=fonts.brief_num, fill=INK)
         nw = text_width(fonts.brief_num, num) + 4
-        line = story["headline"]
-        font = fit_or_shrink("DejaVuSans.ttf", 11, line, col_w - nw)
-        draw.text((x + nw, by), line, font=font, fill=INK)
+        draw_brief_headline(draw, story, x + nw, by, col_w - nw)
         audit.record("brief %d" % story["number"], 1, 1,
                      int(col_w - nw))
 

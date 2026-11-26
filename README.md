@@ -3,7 +3,7 @@
 A one-image world-news front page for the make.fun daily news-image
 contest, edition `news-image-20261126`. One picture, 1024 by 1024
 pixels, that carries the whole day: 36 stories, seven regions, a UTC
-timeline, a numbers strip, a dotted world map, and a printed date
+timeline, a numbers strip, a filled-silhouette world map, and a printed date
 check. Everything on the page was first reported on 26 November 2026.
 
 ## What the page shows
@@ -41,7 +41,7 @@ Around the tiers the page carries the furniture the format demands:
   moment it marks.
 - "The day in numbers": seven figures, from 31 dead in Cairo to
   500,000 Russian war dead on Moscow's own count.
-- "Where it happened": a dot-matrix world map with red numbered pins
+- "Where it happened": a filled-silhouette world map with numbered pins in country colours
   for stories 1 to 13, and a key naming each pinned place.
 - A red-bordered "Date check" box stating that every story above was
   first reported on 26 November 2026, and naming eight stories that
@@ -79,7 +79,7 @@ documentation package that records the edition:
 - `render.py` is the layout engine. It reads `sources.json` and
   draws the whole page with the Python Imaging Library: the
   masthead, the strips, the three tiers, the vector scenes, the
-  dot-matrix map, the briefs, and the footer. It also audits its own
+  silhouette map, the briefs, and the footer. It also audits its own
   layout, measuring every text block against the space it has, and
   it refuses to pass strict mode while anything overflows.
 - `main.py` is the entry point the grader runs. It is standard
